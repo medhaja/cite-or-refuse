@@ -54,9 +54,9 @@ async function openPage(server) {
 }
 
 async function concatAudio() {
-  // Each scene = its WAV + PAD seconds of silence, in order.
+  // Each scene = its WAV + its pad seconds of silence, in order.
   const inputs = timing.scenes.flatMap(s => ["-i", join(HERE, "audio", `scene_${s.id}.wav`)]);
-  const pads = timing.scenes.map((_, i) => `[${i}]apad=pad_dur=${timing.pad}[a${i}]`).join(";");
+  const pads = timing.scenes.map((s, i) => `[${i}]apad=pad_dur=${s.pad ?? timing.pad}[a${i}]`).join(";");
   const cat = timing.scenes.map((_, i) => `[a${i}]`).join("") + `concat=n=${timing.scenes.length}:v=0:a=1[out]`;
   await run("ffmpeg", ["-y", "-loglevel", "error", ...inputs, "-filter_complex", `${pads};${cat}`, "-map", "[out]",
                        "-ar", "24000", "-ac", "1", join(OUT, "narration.wav")]);

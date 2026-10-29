@@ -257,3 +257,7 @@ To recap: citations come from metadata, string matching decides if a quote exist
 65
 00:03:29,125 --> 00:03:32,225
 refusals stay visible, and the eval measures it all.
+
+66
+00:03:33,375 --> 00:03:34,625
+Thank you for watching.

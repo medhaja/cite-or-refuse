@@ -522,6 +522,17 @@ SCENES["08"] = (() => {
   };
 })();
 
+SCENES["09"] = {
+  build: r => r.innerHTML = `
+    <div class="abs" data-k="ty" style="left:0;right:0;top:390px;text-align:center;font:600 120px var(--display);letter-spacing:-.02em">Thank you</div>
+    <div class="abs" data-k="by" style="left:0;right:0;top:560px;text-align:center;font:34px var(--body);color:var(--muted)">Made by <span style="color:var(--ink)">Medhaja H L</span></div>
+    <div class="abs" data-k="foot" style="left:0;right:0;top:940px;text-align:center;font:19px var(--body);color:var(--dim)">Independent prototype built from public information and synthetic data. Not affiliated with Closure.</div>`,
+  beats: at => ({ ty: at("Thank you") }),
+  render(t, b, k) {
+    appear(k.ty, t, b.ty - .2, .7, 16); appear(k.by, t, b.ty + .5, .7, 12); appear(k.foot, t, b.ty + .9, .7, 0);
+  },
+};
+
 // ---------------------------------------------------------------------------------------------------------
 // Runtime
 // ---------------------------------------------------------------------------------------------------------
@@ -562,7 +573,7 @@ window.renderAt = function renderAt(seconds) {
   const fadeIn = cur === RUNTIME[0] ? 1 : prog(local, 0, .35);
   const fadeOut = cur === RUNTIME[RUNTIME.length - 1] ? 1 - prog(local, cur.sc.duration - .6, .6) : 1;
   cur.root.style.opacity = (fadeIn * fadeOut).toFixed(4);
-  cur.k.__title.style.opacity = cur.sc.id === "01" ? 0 : 1;
+  cur.k.__title.style.opacity = cur.sc.id === "01" || cur.sc.id === "09" ? 0 : 1;
   cur.def.render(local, cur.beats, cur.k);
   document.getElementById("chapter").innerHTML = `${cur.sc.id} / <b>${esc(cur.sc.title)}</b>`;
   document.getElementById("bar").style.width = (t / TIMING.total * 1920).toFixed(1) + "px";

@@ -1,7 +1,7 @@
 {
  "fps": 30,
  "pad": 0.6,
- "total": 213.075,
+ "total": 218.0,
  "scenes": [
   {
    "id": "01",
@@ -9,6 +9,7 @@
    "start": 0.0,
    "duration": 23.8,
    "audio_duration": 23.2,
+   "pad": 0.6,
    "words": [
     {
      "text": "Closure's",
@@ -353,6 +354,7 @@
    "start": 23.8,
    "duration": 23.875,
    "audio_duration": 23.275,
+   "pad": 0.6,
    "words": [
     {
      "text": "Here's",
@@ -677,6 +679,7 @@
    "start": 47.675,
    "duration": 20.975,
    "audio_duration": 20.375,
+   "pad": 0.6,
    "words": [
     {
      "text": "The",
@@ -981,6 +984,7 @@
    "start": 68.65,
    "duration": 27.1,
    "audio_duration": 26.5,
+   "pad": 0.6,
    "words": [
     {
      "text": "Let's",
@@ -1370,6 +1374,7 @@
    "start": 95.75,
    "duration": 28.225,
    "audio_duration": 27.625,
+   "pad": 0.6,
    "words": [
     {
      "text": "The",
@@ -1789,6 +1794,7 @@
    "start": 123.975,
    "duration": 28.05,
    "audio_duration": 27.45,
+   "pad": 0.6,
    "words": [
     {
      "text": "The",
@@ -2168,6 +2174,7 @@
    "start": 152.025,
    "duration": 33.0,
    "audio_duration": 32.4,
+   "pad": 0.6,
    "words": [
     {
      "text": "Some",
@@ -2592,6 +2599,7 @@
    "start": 185.025,
    "duration": 28.05,
    "audio_duration": 27.45,
+   "pad": 0.6,
    "words": [
     {
      "text": "To",
@@ -2962,6 +2970,36 @@
      "text": "all.",
      "start": 26.65,
      "end": 27.2
+    }
+   ]
+  },
+  {
+   "id": "09",
+   "title": "Thank you",
+   "start": 213.075,
+   "duration": 4.925,
+   "audio_duration": 1.825,
+   "pad": 3.1,
+   "words": [
+    {
+     "text": "Thank",
+     "start": 0.3,
+     "end": 0.525
+    },
+    {
+     "text": "you",
+     "start": 0.525,
+     "end": 0.675
+    },
+    {
+     "text": "for",
+     "start": 0.675,
+     "end": 0.8
+    },
+    {
+     "text": "watching.",
+     "start": 0.8,
+     "end": 1.55
     }
    ]
   }

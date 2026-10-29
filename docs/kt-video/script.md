@@ -285,6 +285,24 @@ matching decides if a quote exists, refusals stay visible, and the eval measures
 
 ---
 
+## Scene 09 / Thank you
+
+**Narration**
+
+Thank you for watching.
+
+**On screen**
+
+- Centered "Thank you" fades in with the narration; "Made by Medhaja H L" appears beneath it half a second later.
+- Small footer: "Independent prototype built from public information and synthetic data. Not affiliated with Closure."
+- The scene holds for 2.5 s after the narration (`HOLD` in `tts.py`), then fades to black.
+
+**Sources**
+
+- Footer line: `README.md:11`, `README.md:169`
+
+---
+
 ## Totals
 
 | Scene | Words | Est. at 145 wpm |

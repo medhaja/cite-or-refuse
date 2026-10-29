@@ -24,6 +24,7 @@ SCRIPT = HERE / "script.md"
 RATE = 24_000
 VOICE = "af_heart"
 PAD = 0.6  # seconds of silence after each scene
+HOLD = {"09": 2.5}  # extra silent hold for scenes that need reading time (the closing card)
 CAPTION_CHARS = 84
 # Narration is spelled for the voice; captions show the written form.
 CAPTION_FIXES = [
@@ -106,9 +107,10 @@ def build_timing(scenes: list[dict]) -> dict:
         wav = AUDIO / f"scene_{s['id']}.wav"
         audio_dur = sf.info(str(wav)).frames / RATE
         words = json.loads((AUDIO / f"scene_{s['id']}.words.json").read_text(encoding="utf-8"))
-        dur = round(audio_dur + PAD, 3)
+        pad = PAD + HOLD.get(s["id"], 0.0)
+        dur = round(audio_dur + pad, 3)
         out.append({"id": s["id"], "title": s["title"], "start": round(t, 3), "duration": dur,
-                    "audio_duration": round(audio_dur, 3), "words": words})
+                    "audio_duration": round(audio_dur, 3), "pad": pad, "words": words})
         for a, b, text in caption_lines(words):
             captions.append((t + a, t + b, text))
         t += dur

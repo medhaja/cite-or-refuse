@@ -1,0 +1,100 @@
+# Cite or Refuse: verified, source-linked answers over evidence, with an offline eval
+
+**One-liner**
+Ask a question about a synthetic case. Every claim in the answer links to a transcript timestamp or a case-file page. A verifier checks each citation, removes any claim it can't trace, and an offline eval reports how often the system gets it right.
+
+## Problem (outside-in)
+From the outside, Closure's pitch is that the AI finds material and humans check it. Aaron Zelinger has said all evidence still faces cross-examination and court scrutiny ([Comstock's](https://www.comstocksmag.com/longreads/can-ai-solve-cold-cases-california-investigators-think-it-could-help), [Axios](https://www.axios.com/2026/01/24/ai-police-evidence-cold-cases)). Comstock's says Closure points investigators to the source material. It doesn't report error rates or testing. SLO DA Dan Dow wants human judgment to stay in the loop ([New Times SLO](https://www.newtimesslo.com/a-slo-county-police-department-and-the-das-office-navigate-the-first-stages-of-ai/)). In coverage of a competitor, a law professor asks "what auditing mechanisms exist" ([Inc.](https://inc-1-smart-business-story.beehiiv.com/p/this-startup-raised-20-million-to-help-police-sift-through-evidence-can-its-ai-be-trusted)).
+
+Closure's site describes a Zero Access Architecture ([closure-intel.com](https://www.closure-intel.com/)). My reading is that engineers can't read production data to debug quality. If so, quality has to be measured on data you're allowed to see. That means synthetic or public data and a repeatable eval. One invented quote in a homicide file could cost trust with many agencies.
+
+## Users and the job to be done
+- **Detective:** "Show me where the suspect talked about the car, and let me hear or read the exact line."
+- **Prosecutor:** "Before I rely on this, prove every sentence comes from the record."
+- **Closure engineer:** "Tell me if a model or prompt change made citations worse, without touching customer data."
+
+## Goals / Non-goals
+**Goals**
+- Every claim shown carries a citation to a timestamp range or a page and line.
+- Claims the verifier can't support are dropped and listed as refused, not hidden.
+- One command runs an eval that reports retrieval recall, citation support and quote fidelity.
+- Works with no API key.
+
+**Non-goals**
+- Real evidence, audio transcription, OCR, CJIS deployment.
+- Claiming these numbers say anything about Closure's product.
+
+This is independent work. It uses only public information and synthetic data I generate. I have no access to Closure's data, systems or users.
+
+## Prototype scope
+- A synthetic case: about 40 jail-call transcripts and 15 case-file documents.
+- Ingest into chunks that keep their source IDs (call ID + timestamps, doc ID + page + lines).
+- Hybrid retrieval: BM25 always, embeddings optional.
+- An answerer that writes claims with citations. Mock extractive by default, LLM optional.
+- A verifier that checks every claim against its cited span.
+- A gold eval set of about 30 questions, plus an eval runner that writes a report.
+- A web UI with three screens.
+
+## Functional requirements
+1. `make demo` (or `python run.py`) generates data if it's missing, builds the index and serves the UI on localhost:8000.
+2. Each chunk stores `source_type`, `source_id`, `start_ts`/`end_ts` or `page`/`line_start`/`line_end`, `speaker` and `text`.
+3. `POST /ask` returns `{claims:[{text, quote, citation, verdict, score}], refused:[...]}`.
+4. Each quote must appear verbatim (after whitespace normalization) in its cited span, or the claim is refused with reason `quote_not_found`.
+5. Each claim needs entailment support from its span: lexical overlap plus a number/name/date match by default, optional LLM judge. Otherwise it's refused with reason `unsupported`.
+6. If no claim survives, the answer reads "No traceable answer found" and lists what was retrieved.
+7. A citation that points to a missing timestamp or page is refused with reason `bad_citation`.
+8. `python eval.py` prints and saves `eval_report.json` with recall@5, citation precision, quote fidelity, refusal rate on unanswerable questions, and false-refusal rate.
+9. `eval.py --inject-faults` corrupts 20% of mock answers (wrong timestamp, altered quote, swapped speaker). The report shows how many the verifier caught.
+10. Every request is logged to `runs.jsonl` with query, retrieved IDs, claims, verdicts and latency.
+
+## Demo UI
+1. **Ask:** a question box with sample questions. Verified claims show as cards with a citation chip (e.g. `CALL-017 @ 03:12-03:31` or `DOC-04 p.2 L14-19`). A red "Refused" panel lists dropped claims and why.
+2. **Source viewer:** click a chip to see the full transcript or page with the cited span highlighted and the speaker labeled.
+3. **Eval:** metrics from the last run, a table of failures by question, and a toggle to compare the run with and without fault injection.
+
+## Data
+Generated by a seeded Python script, so it's the same every run. It's a fictional case: a 2009 cold-case robbery-homicide in an invented town.
+- **Calls (40):** 2 to 6 minutes each, timestamped lines, 2 to 3 speakers, slang, partial names ("Dre", "Andre W."), crosstalk, and some `[inaudible]` gaps.
+- **Case files (15):** incident report, witness statements, evidence log and a supplemental report, with pages and line numbers. Includes one typo'd date and one conflicting witness account.
+- **Gold questions (30):** 20 answerable with known source spans, 5 needing two sources, 5 unanswerable ("What did the victim's brother say on calls?" when he never called).
+- **Edge cases:** the same phrase said by two speakers, near-duplicate calls, and a vehicle mentioned only by color.
+
+## Architecture
+`generator -> ingest/chunker -> index (BM25 + optional FAISS) -> retriever -> answerer -> verifier -> API -> UI`, with `eval runner` calling the same retriever, answerer and verifier.
+
+Plain code does the parts that must be exact: chunking, citation IDs, verbatim quote matching, timestamp checks, metrics. An LLM helps only where language is fuzzy: writing claims and, optionally, judging whether a span supports a claim. Both sit behind LiteLLM. With no key, a deterministic mock picks top sentences and quotes them. The rule is that the model never gets the last word on whether a quote exists. String matching decides that.
+
+This is the same pattern I used at Bizmetric on the ADF-to-PySpark accelerator: deterministic translation, then LLM semantic validation, then automated repair.
+
+## Tech choices
+- **Python + FastAPI.** This is what I ship with day to day, and it matches the Python in the job post.
+- **A single static HTML/JS page.** No build step, so the demo runs with one command. I've built React frontends before, but for two minutes of clicking a build step isn't worth it.
+- **rank_bm25, with FAISS optional.** I've used FAISS in a RAG chatbot. BM25 keeps the default free and deterministic.
+- **LiteLLM.** I've used it for routing across Claude and OpenAI. Here it makes the LLM swappable and optional.
+- **pytest** for tests.
+
+## How we'd know it works
+- **Tests:** a quote that isn't in its span is always refused. A bad timestamp is always refused. The same input gives the same output in mock mode.
+- **Eval targets on synthetic data (mock mode):** recall@5 ≥ 0.85, quote fidelity of displayed claims = 1.0, refusal on unanswerable questions ≥ 0.8, false refusals ≤ 0.15.
+- **Fault injection:** the verifier catches ≥ 95% of corrupted citations.
+- **LLM mode:** the same report, compared side by side, so a model change shows up as a number before it ships.
+
+## Risks and open questions
+- Synthetic data is cleaner than real jail calls. ASR errors will hurt verbatim matching. Should the check use fuzzy matching against the audio-aligned transcript?
+- Lexical support checks miss paraphrase. How strict should Closure's bar be: refuse more, or show with a warning?
+- I'm assuming Zero Access means quality work has to run offline. I'd like to hear how the team actually evaluates today.
+- About me: I'm in Bengaluru with 5 years of experience, and I'd need US visa sponsorship. The post says Closure sponsors. I'm open to relocating to NYC or the Bay Area.
+
+## Build plan
+1. Scaffold the repo, `run.py`, Makefile and requirements.
+2. Write the seeded data generator and gold questions.
+3. Write the chunker with citation metadata, plus a BM25 index.
+4. Build the mock answerer, then the verifier with its three refusal reasons. Add tests.
+5. Add the `/ask` and `/source` endpoints and request logging.
+6. Write the eval runner with metrics and fault injection.
+7. Build the UI: Ask, Source viewer, Eval.
+8. Add the optional LiteLLM answerer and judge behind an env var.
+9. Write a README with a two-minute demo script and the last eval report.
+
+## Out of scope for the prototype
+Audio, ASR, OCR on scans, translation, multi-case search, auth, CJIS controls, structured call-record and plate-reader joins, and any real or scraped evidence.

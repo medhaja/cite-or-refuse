@@ -21,3 +21,6 @@ out/
 *.log
 .DS_Store
 Thumbs.db
+
+# Request log written by the demo server
+runs.jsonl

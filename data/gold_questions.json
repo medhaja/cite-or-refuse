@@ -313,7 +313,7 @@
  },
  {
   "qid": "Q21",
-  "question": "Where did Andre say he was that night, and when did his mom say he came home?",
+  "question": "Where did Andre say he was that night, and what did Loretta say about that night?",
   "category": "multi_source",
   "evidence": [
    {
@@ -359,7 +359,7 @@
  },
  {
   "qid": "Q23",
-  "question": "Who pawned the gold watch and what did Kevin say about the watch?",
+  "question": "Who pawned the gold watch, and what did Kevin say about the watch?",
   "category": "multi_source",
   "evidence": [
    {
@@ -382,7 +382,7 @@
  },
  {
   "qid": "Q24",
-  "question": "What date of the incident is recorded in the incident report and the evidence log?",
+  "question": "What date is recorded in the incident report, and what date is in the evidence log?",
   "category": "multi_source",
   "evidence": [
    {
@@ -405,7 +405,7 @@
  },
  {
   "qid": "Q25",
-  "question": "What links Rico Banks to the green car?",
+  "question": "Who was the green car registered to, and what did Andre tell Rico to do with it?",
   "category": "multi_source",
   "evidence": [
    {

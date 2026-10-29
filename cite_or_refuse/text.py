@@ -36,7 +36,10 @@ def _stem(tok: str) -> str:
 
 def tokenize(text: str, keep_stopwords: bool = False) -> list[str]:
     toks = _TOKEN_RE.findall(normalize_ws(text).lower())
-    return [_stem(t) for t in toks if keep_stopwords or t not in STOPWORDS]
+    if keep_stopwords:
+        return [_stem(t) for t in toks]
+    stems = (_stem(t) for t in toks if t not in STOPWORDS)
+    return [t for t in stems if t not in STOPWORDS]
 
 
 def numbers(text: str) -> set[str]:

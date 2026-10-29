@@ -1,0 +1,463 @@
+[
+ {
+  "qid": "Q01",
+  "question": "What did Andre tell Rico to do with the green car?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "CALL-017",
+      "contains": "get rid of the green one"
+     },
+     {
+      "source_id": "CALL-018",
+      "contains": "get rid of the green one"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q02",
+  "question": "Who did Tasha say had the gold watch?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "CALL-008",
+      "contains": "Kev said he took it to Lucky's"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q03",
+  "question": "What time did dispatch receive the 911 call?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-01",
+      "contains": "at 2342 hours"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q04",
+  "question": "How much cash was taken from the register?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-01",
+      "contains": "$1,260"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q05",
+  "question": "What did Gloria Fenn see pull out of the lot?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-03",
+      "contains": "dark green car pull out of the lot"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q06",
+  "question": "What vehicle did Paul Ortiz describe?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-04",
+      "contains": "blue pickup truck"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q07",
+  "question": "What caliber was the shell casing?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-05",
+      "contains": "9mm shell casing"
+     },
+     {
+      "source_id": "DOC-13",
+      "contains": "consistent with a 9mm pistol"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q08",
+  "question": "Where was the red baseball cap found?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-05",
+      "contains": "found on floor by the front door"
+     },
+     {
+      "source_id": "DOC-01",
+      "contains": "located near the front door"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q09",
+  "question": "Did the lab get a DNA profile from the red cap?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-13",
+      "contains": "insufficient for a full DNA profile"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q10",
+  "question": "What did Andre say about where he was that night?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "CALL-005",
+      "contains": "at my mom's watching the game"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q11",
+  "question": "What did Kevin say on the calls about being there that night?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "CALL-031",
+      "contains": "I wasn't even there that night"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q12",
+  "question": "What did Andre say about the red hat?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "CALL-012",
+      "contains": "Rico always wore red"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q13",
+  "question": "What did Loretta Whitfield say about that night?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "CALL-020",
+      "contains": "after midnight"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q14",
+  "question": "What did Kevin say about the watch at Lucky's?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "CALL-033",
+      "contains": "moved the watch for Dre"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q15",
+  "question": "What did Andre tell Tasha to do if detectives come by?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "CALL-010",
+      "contains": "call my lawyer"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q16",
+  "question": "Who was the green Honda Accord registered to?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-09",
+      "contains": "registered to Enrique Banks"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q17",
+  "question": "Where did Darnell Bell say he was all night?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-07",
+      "contains": "at home in Ashby"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q18",
+  "question": "Why was the rear camera not recording?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-08",
+      "contains": "failed hard drive"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q19",
+  "question": "When was the case reassigned for cold case review?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-06",
+      "contains": "06/04/2018"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q20",
+  "question": "What was the loan amount for the pawned watch?",
+  "category": "answerable",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-14",
+      "contains": "$150"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q21",
+  "question": "Where did Andre say he was that night, and when did his mom say he came home?",
+  "category": "multi_source",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "CALL-005",
+      "contains": "at my mom's"
+     }
+    ]
+   },
+   {
+    "any_of": [
+     {
+      "source_id": "CALL-020",
+      "contains": "after midnight"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q22",
+  "question": "What color was the vehicle according to the witness statements?",
+  "category": "multi_source",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-03",
+      "contains": "dark green"
+     }
+    ]
+   },
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-04",
+      "contains": "blue"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q23",
+  "question": "Who pawned the gold watch and what did Kevin say about the watch?",
+  "category": "multi_source",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-14",
+      "contains": "K. Lopez"
+     }
+    ]
+   },
+   {
+    "any_of": [
+     {
+      "source_id": "CALL-033",
+      "contains": "moved the watch"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q24",
+  "question": "What date of the incident is recorded in the incident report and the evidence log?",
+  "category": "multi_source",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-01",
+      "contains": "03/14/2009"
+     }
+    ]
+   },
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-05",
+      "contains": "03/14/2008"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q25",
+  "question": "What links Rico Banks to the green car?",
+  "category": "multi_source",
+  "evidence": [
+   {
+    "any_of": [
+     {
+      "source_id": "DOC-09",
+      "contains": "Enrique Banks (known as Rico)"
+     }
+    ]
+   },
+   {
+    "any_of": [
+     {
+      "source_id": "CALL-017",
+      "contains": "Tell Rico get rid of the green one"
+     },
+     {
+      "source_id": "CALL-018",
+      "contains": "Tell Rico get rid of the green one"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "qid": "Q26",
+  "question": "What did the victim's brother say on the jail calls?",
+  "category": "unanswerable",
+  "evidence": []
+ },
+ {
+  "qid": "Q27",
+  "question": "What was the license plate of the green car?",
+  "category": "unanswerable",
+  "evidence": []
+ },
+ {
+  "qid": "Q28",
+  "question": "Who was the getaway driver?",
+  "category": "unanswerable",
+  "evidence": []
+ },
+ {
+  "qid": "Q29",
+  "question": "What did Tasha say about the shell casing?",
+  "category": "unanswerable",
+  "evidence": []
+ },
+ {
+  "qid": "Q30",
+  "question": "What did the security guard see?",
+  "category": "unanswerable",
+  "evidence": []
+ }
+]

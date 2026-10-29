@@ -1,0 +1,6477 @@
+[
+ {
+  "call_id": "CALL-001",
+  "date": "2018-07-17",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 189,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 16,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 17,
+    "end_ts": 21,
+    "speaker": "Tasha Greene",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 22,
+    "end_ts": 33,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 34,
+    "end_ts": 40,
+    "speaker": "Tasha Greene",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 41,
+    "end_ts": 50,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 51,
+    "end_ts": 55,
+    "speaker": "Tasha Greene",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 56,
+    "end_ts": 64,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 65,
+    "end_ts": 70,
+    "speaker": "Tasha Greene",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 71,
+    "end_ts": 81,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 82,
+    "end_ts": 93,
+    "speaker": "Tasha Greene",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 94,
+    "end_ts": 100,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 101,
+    "end_ts": 105,
+    "speaker": "Tasha Greene",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 106,
+    "end_ts": 109,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 110,
+    "end_ts": 113,
+    "speaker": "Tasha Greene",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 114,
+    "end_ts": 120,
+    "speaker": "Andre Whitfield",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 121,
+    "end_ts": 132,
+    "speaker": "Tasha Greene",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 133,
+    "end_ts": 142,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 143,
+    "end_ts": 189,
+    "speaker": "Tasha Greene",
+    "text": "I can't hear you, say that again."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-002",
+  "date": "2018-07-19",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Enrique Banks"
+  ],
+  "duration": 223,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 15,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 16,
+    "end_ts": 24,
+    "speaker": "Enrique Banks",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 25,
+    "end_ts": 32,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 33,
+    "end_ts": 42,
+    "speaker": "Enrique Banks",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 43,
+    "end_ts": 53,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 54,
+    "end_ts": 63,
+    "speaker": "Enrique Banks",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 64,
+    "end_ts": 74,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 75,
+    "end_ts": 78,
+    "speaker": "Enrique Banks",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 79,
+    "end_ts": 85,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 86,
+    "end_ts": 97,
+    "speaker": "Enrique Banks",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 98,
+    "end_ts": 102,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 103,
+    "end_ts": 108,
+    "speaker": "Enrique Banks",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 109,
+    "end_ts": 113,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 114,
+    "end_ts": 122,
+    "speaker": "Enrique Banks",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 123,
+    "end_ts": 134,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 135,
+    "end_ts": 144,
+    "speaker": "Enrique Banks",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 145,
+    "end_ts": 151,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 152,
+    "end_ts": 157,
+    "speaker": "Enrique Banks",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 158,
+    "end_ts": 169,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 170,
+    "end_ts": 177,
+    "speaker": "Enrique Banks",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 178,
+    "end_ts": 186,
+    "speaker": "Andre Whitfield",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 187,
+    "end_ts": 223,
+    "speaker": "Enrique Banks",
+    "text": "Boy, stop."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-003",
+  "date": "2018-07-22",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Loretta Whitfield"
+  ],
+  "duration": 269,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 14,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 15,
+    "end_ts": 18,
+    "speaker": "Loretta Whitfield",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 19,
+    "end_ts": 25,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 26,
+    "end_ts": 29,
+    "speaker": "Loretta Whitfield",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 30,
+    "end_ts": 41,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 42,
+    "end_ts": 47,
+    "speaker": "Loretta Whitfield",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 48,
+    "end_ts": 55,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 56,
+    "end_ts": 61,
+    "speaker": "Loretta Whitfield",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 62,
+    "end_ts": 72,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 73,
+    "end_ts": 76,
+    "speaker": "Loretta Whitfield",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 77,
+    "end_ts": 80,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 81,
+    "end_ts": 91,
+    "speaker": "Loretta Whitfield",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 92,
+    "end_ts": 99,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 100,
+    "end_ts": 110,
+    "speaker": "Loretta Whitfield",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 111,
+    "end_ts": 119,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 120,
+    "end_ts": 123,
+    "speaker": "Loretta Whitfield",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 124,
+    "end_ts": 128,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 129,
+    "end_ts": 132,
+    "speaker": "Loretta Whitfield",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 133,
+    "end_ts": 144,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 145,
+    "end_ts": 152,
+    "speaker": "Loretta Whitfield",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 153,
+    "end_ts": 161,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 162,
+    "end_ts": 167,
+    "speaker": "Loretta Whitfield",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 168,
+    "end_ts": 177,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 178,
+    "end_ts": 187,
+    "speaker": "Loretta Whitfield",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 188,
+    "end_ts": 196,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 197,
+    "end_ts": 269,
+    "speaker": "Loretta Whitfield",
+    "text": "[crosstalk]"
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-004",
+  "date": "2018-07-10",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 257,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 11,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 12,
+    "end_ts": 20,
+    "speaker": "Tasha Greene",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 21,
+    "end_ts": 30,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 31,
+    "end_ts": 41,
+    "speaker": "Tasha Greene",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 42,
+    "end_ts": 47,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 48,
+    "end_ts": 58,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 59,
+    "end_ts": 67,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 68,
+    "end_ts": 73,
+    "speaker": "Tasha Greene",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 74,
+    "end_ts": 82,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 83,
+    "end_ts": 87,
+    "speaker": "Tasha Greene",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 88,
+    "end_ts": 93,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 94,
+    "end_ts": 99,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 100,
+    "end_ts": 107,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 108,
+    "end_ts": 119,
+    "speaker": "Tasha Greene",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 120,
+    "end_ts": 129,
+    "speaker": "Andre Whitfield",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 130,
+    "end_ts": 140,
+    "speaker": "Tasha Greene",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 141,
+    "end_ts": 151,
+    "speaker": "Andre Whitfield",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 152,
+    "end_ts": 162,
+    "speaker": "Tasha Greene",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 163,
+    "end_ts": 172,
+    "speaker": "Andre Whitfield",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 173,
+    "end_ts": 179,
+    "speaker": "Tasha Greene",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 180,
+    "end_ts": 191,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 192,
+    "end_ts": 197,
+    "speaker": "Tasha Greene",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 198,
+    "end_ts": 207,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 208,
+    "end_ts": 214,
+    "speaker": "Tasha Greene",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 215,
+    "end_ts": 257,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-005",
+  "date": "2018-07-10",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 179,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 13,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 14,
+    "end_ts": 20,
+    "speaker": "Tasha Greene",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 21,
+    "end_ts": 25,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 26,
+    "end_ts": 30,
+    "speaker": "Tasha Greene",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 31,
+    "end_ts": 34,
+    "speaker": "Tasha Greene",
+    "text": "They keep asking me where you was back then."
+   },
+   {
+    "start_ts": 35,
+    "end_ts": 44,
+    "speaker": "Andre Whitfield",
+    "text": "I wasn't even there that night, I was at my mom's watching the game."
+   },
+   {
+    "start_ts": 45,
+    "end_ts": 54,
+    "speaker": "Tasha Greene",
+    "text": "Okay, I'm just telling you what they asking."
+   },
+   {
+    "start_ts": 55,
+    "end_ts": 59,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 60,
+    "end_ts": 66,
+    "speaker": "Tasha Greene",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 67,
+    "end_ts": 72,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 73,
+    "end_ts": 80,
+    "speaker": "Tasha Greene",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 81,
+    "end_ts": 90,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 91,
+    "end_ts": 99,
+    "speaker": "Tasha Greene",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 100,
+    "end_ts": 104,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 105,
+    "end_ts": 114,
+    "speaker": "Tasha Greene",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 115,
+    "end_ts": 119,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 120,
+    "end_ts": 125,
+    "speaker": "Tasha Greene",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 126,
+    "end_ts": 129,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 130,
+    "end_ts": 138,
+    "speaker": "Tasha Greene",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 139,
+    "end_ts": 179,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-006",
+  "date": "2018-08-10",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 166,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 11,
+    "speaker": "Andre Whitfield",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 12,
+    "end_ts": 23,
+    "speaker": "Tasha Greene",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 24,
+    "end_ts": 34,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 35,
+    "end_ts": 41,
+    "speaker": "Tasha Greene",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 42,
+    "end_ts": 48,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 49,
+    "end_ts": 54,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 55,
+    "end_ts": 63,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 64,
+    "end_ts": 74,
+    "speaker": "Tasha Greene",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 75,
+    "end_ts": 84,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 85,
+    "end_ts": 93,
+    "speaker": "Tasha Greene",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 94,
+    "end_ts": 103,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 104,
+    "end_ts": 108,
+    "speaker": "Tasha Greene",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 109,
+    "end_ts": 120,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 121,
+    "end_ts": 129,
+    "speaker": "Tasha Greene",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 130,
+    "end_ts": 139,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 140,
+    "end_ts": 166,
+    "speaker": "Tasha Greene",
+    "text": "Mm-hm."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-007",
+  "date": "2018-08-23",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Enrique Banks"
+  ],
+  "duration": 341,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 13,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 14,
+    "end_ts": 23,
+    "speaker": "Enrique Banks",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 24,
+    "end_ts": 35,
+    "speaker": "Andre Whitfield",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 36,
+    "end_ts": 46,
+    "speaker": "Enrique Banks",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 47,
+    "end_ts": 50,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 51,
+    "end_ts": 57,
+    "speaker": "Enrique Banks",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 58,
+    "end_ts": 65,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 66,
+    "end_ts": 75,
+    "speaker": "Enrique Banks",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 76,
+    "end_ts": 82,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 83,
+    "end_ts": 87,
+    "speaker": "Enrique Banks",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 88,
+    "end_ts": 94,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 95,
+    "end_ts": 105,
+    "speaker": "Enrique Banks",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 106,
+    "end_ts": 114,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 115,
+    "end_ts": 118,
+    "speaker": "Enrique Banks",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 119,
+    "end_ts": 128,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 129,
+    "end_ts": 137,
+    "speaker": "Enrique Banks",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 138,
+    "end_ts": 142,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 143,
+    "end_ts": 148,
+    "speaker": "Enrique Banks",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 149,
+    "end_ts": 153,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 154,
+    "end_ts": 158,
+    "speaker": "Enrique Banks",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 159,
+    "end_ts": 165,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 166,
+    "end_ts": 172,
+    "speaker": "Enrique Banks",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 173,
+    "end_ts": 176,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 177,
+    "end_ts": 182,
+    "speaker": "Enrique Banks",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 183,
+    "end_ts": 193,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 194,
+    "end_ts": 200,
+    "speaker": "Enrique Banks",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 201,
+    "end_ts": 210,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 211,
+    "end_ts": 214,
+    "speaker": "Enrique Banks",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 215,
+    "end_ts": 218,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 219,
+    "end_ts": 223,
+    "speaker": "Enrique Banks",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 224,
+    "end_ts": 231,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 232,
+    "end_ts": 236,
+    "speaker": "Enrique Banks",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 237,
+    "end_ts": 243,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 244,
+    "end_ts": 341,
+    "speaker": "Enrique Banks",
+    "text": "Don't start with me today."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-008",
+  "date": "2018-08-09",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 205,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 10,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 11,
+    "end_ts": 15,
+    "speaker": "Tasha Greene",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 16,
+    "end_ts": 25,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 26,
+    "end_ts": 30,
+    "speaker": "Tasha Greene",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 31,
+    "end_ts": 37,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 38,
+    "end_ts": 44,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 45,
+    "end_ts": 56,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 57,
+    "end_ts": 64,
+    "speaker": "Tasha Greene",
+    "text": "Something I gotta ask you about, and don't get mad."
+   },
+   {
+    "start_ts": 65,
+    "end_ts": 70,
+    "speaker": "Andre Whitfield",
+    "text": "What now?"
+   },
+   {
+    "start_ts": 71,
+    "end_ts": 79,
+    "speaker": "Tasha Greene",
+    "text": "That watch you had, the gold one, Kev said he took it to Lucky's."
+   },
+   {
+    "start_ts": 80,
+    "end_ts": 89,
+    "speaker": "Andre Whitfield",
+    "text": "Don't talk about that on this phone."
+   },
+   {
+    "start_ts": 90,
+    "end_ts": 96,
+    "speaker": "Tasha Greene",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 97,
+    "end_ts": 103,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 104,
+    "end_ts": 115,
+    "speaker": "Tasha Greene",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 116,
+    "end_ts": 125,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 126,
+    "end_ts": 129,
+    "speaker": "Tasha Greene",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 130,
+    "end_ts": 140,
+    "speaker": "Andre Whitfield",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 141,
+    "end_ts": 150,
+    "speaker": "Tasha Greene",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 151,
+    "end_ts": 161,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 162,
+    "end_ts": 169,
+    "speaker": "Tasha Greene",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 170,
+    "end_ts": 177,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 178,
+    "end_ts": 187,
+    "speaker": "Tasha Greene",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 188,
+    "end_ts": 197,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 198,
+    "end_ts": 205,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-009",
+  "date": "2018-08-16",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 148,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 17,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 18,
+    "end_ts": 26,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 27,
+    "end_ts": 35,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 36,
+    "end_ts": 47,
+    "speaker": "Tasha Greene",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 48,
+    "end_ts": 58,
+    "speaker": "Andre Whitfield",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 59,
+    "end_ts": 68,
+    "speaker": "Tasha Greene",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 69,
+    "end_ts": 78,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 79,
+    "end_ts": 86,
+    "speaker": "Tasha Greene",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 87,
+    "end_ts": 97,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 98,
+    "end_ts": 105,
+    "speaker": "Tasha Greene",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 106,
+    "end_ts": 110,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 111,
+    "end_ts": 114,
+    "speaker": "Tasha Greene",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 115,
+    "end_ts": 123,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 124,
+    "end_ts": 148,
+    "speaker": "Tasha Greene",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-010",
+  "date": "2018-08-04",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 219,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 15,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 16,
+    "end_ts": 21,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 22,
+    "end_ts": 31,
+    "speaker": "Andre Whitfield",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 32,
+    "end_ts": 43,
+    "speaker": "Tasha Greene",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 44,
+    "end_ts": 50,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 51,
+    "end_ts": 58,
+    "speaker": "Tasha Greene",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 59,
+    "end_ts": 64,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 65,
+    "end_ts": 73,
+    "speaker": "Tasha Greene",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 74,
+    "end_ts": 81,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 82,
+    "end_ts": 87,
+    "speaker": "Tasha Greene",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 88,
+    "end_ts": 99,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 100,
+    "end_ts": 106,
+    "speaker": "Tasha Greene",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 107,
+    "end_ts": 115,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 116,
+    "end_ts": 123,
+    "speaker": "Tasha Greene",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 124,
+    "end_ts": 135,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 136,
+    "end_ts": 142,
+    "speaker": "Tasha Greene",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 143,
+    "end_ts": 152,
+    "speaker": "Andre Whitfield",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 153,
+    "end_ts": 156,
+    "speaker": "Tasha Greene",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 157,
+    "end_ts": 162,
+    "speaker": "Andre Whitfield",
+    "text": "Listen to me, Tasha."
+   },
+   {
+    "start_ts": 163,
+    "end_ts": 171,
+    "speaker": "Andre Whitfield",
+    "text": "If them detectives come by, you don't say nothing, you tell them call my lawyer."
+   },
+   {
+    "start_ts": 172,
+    "end_ts": 175,
+    "speaker": "Tasha Greene",
+    "text": "I know, Dre, I know."
+   },
+   {
+    "start_ts": 176,
+    "end_ts": 182,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 183,
+    "end_ts": 190,
+    "speaker": "Tasha Greene",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 191,
+    "end_ts": 219,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-011",
+  "date": "2018-09-22",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 328,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 17,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 18,
+    "end_ts": 25,
+    "speaker": "Tasha Greene",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 26,
+    "end_ts": 34,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 35,
+    "end_ts": 46,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 47,
+    "end_ts": 58,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 59,
+    "end_ts": 69,
+    "speaker": "Tasha Greene",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 70,
+    "end_ts": 78,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 79,
+    "end_ts": 90,
+    "speaker": "Tasha Greene",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 91,
+    "end_ts": 97,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 98,
+    "end_ts": 106,
+    "speaker": "Tasha Greene",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 107,
+    "end_ts": 118,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 119,
+    "end_ts": 123,
+    "speaker": "Tasha Greene",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 124,
+    "end_ts": 135,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 136,
+    "end_ts": 145,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 146,
+    "end_ts": 156,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 157,
+    "end_ts": 161,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 162,
+    "end_ts": 169,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 170,
+    "end_ts": 175,
+    "speaker": "Tasha Greene",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 176,
+    "end_ts": 182,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 183,
+    "end_ts": 189,
+    "speaker": "Tasha Greene",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 190,
+    "end_ts": 198,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 199,
+    "end_ts": 206,
+    "speaker": "Tasha Greene",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 207,
+    "end_ts": 215,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 216,
+    "end_ts": 227,
+    "speaker": "Tasha Greene",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 228,
+    "end_ts": 239,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 240,
+    "end_ts": 249,
+    "speaker": "Tasha Greene",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 250,
+    "end_ts": 261,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 262,
+    "end_ts": 266,
+    "speaker": "Tasha Greene",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 267,
+    "end_ts": 277,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 278,
+    "end_ts": 282,
+    "speaker": "Tasha Greene",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 283,
+    "end_ts": 286,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 287,
+    "end_ts": 328,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-012",
+  "date": "2018-09-15",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Jamal Pierce"
+  ],
+  "duration": 184,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 15,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 16,
+    "end_ts": 23,
+    "speaker": "Jamal Pierce",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 24,
+    "end_ts": 35,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 36,
+    "end_ts": 42,
+    "speaker": "Jamal Pierce",
+    "text": "They said they still got that hat from the store."
+   },
+   {
+    "start_ts": 43,
+    "end_ts": 54,
+    "speaker": "Andre Whitfield",
+    "text": "That hat they got, the red one, that ain't even mine, Rico always wore red."
+   },
+   {
+    "start_ts": 55,
+    "end_ts": 59,
+    "speaker": "Jamal Pierce",
+    "text": "Bro, chill."
+   },
+   {
+    "start_ts": 60,
+    "end_ts": 64,
+    "speaker": "Jamal Pierce",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 65,
+    "end_ts": 76,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 77,
+    "end_ts": 80,
+    "speaker": "Jamal Pierce",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 81,
+    "end_ts": 91,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 92,
+    "end_ts": 97,
+    "speaker": "Jamal Pierce",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 98,
+    "end_ts": 106,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 107,
+    "end_ts": 112,
+    "speaker": "Jamal Pierce",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 113,
+    "end_ts": 116,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 117,
+    "end_ts": 120,
+    "speaker": "Jamal Pierce",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 121,
+    "end_ts": 129,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 130,
+    "end_ts": 135,
+    "speaker": "Jamal Pierce",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 136,
+    "end_ts": 146,
+    "speaker": "Andre Whitfield",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 147,
+    "end_ts": 150,
+    "speaker": "Jamal Pierce",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 151,
+    "end_ts": 160,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 161,
+    "end_ts": 184,
+    "speaker": "Jamal Pierce",
+    "text": "Everybody at church said they praying for you."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-013",
+  "date": "2018-09-01",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Loretta Whitfield"
+  ],
+  "duration": 337,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 14,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 15,
+    "end_ts": 25,
+    "speaker": "Loretta Whitfield",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 26,
+    "end_ts": 36,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 37,
+    "end_ts": 43,
+    "speaker": "Loretta Whitfield",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 44,
+    "end_ts": 54,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 55,
+    "end_ts": 58,
+    "speaker": "Loretta Whitfield",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 59,
+    "end_ts": 68,
+    "speaker": "Andre Whitfield",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 69,
+    "end_ts": 74,
+    "speaker": "Loretta Whitfield",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 75,
+    "end_ts": 86,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 87,
+    "end_ts": 94,
+    "speaker": "Loretta Whitfield",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 95,
+    "end_ts": 106,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 107,
+    "end_ts": 116,
+    "speaker": "Loretta Whitfield",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 117,
+    "end_ts": 122,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 123,
+    "end_ts": 128,
+    "speaker": "Loretta Whitfield",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 129,
+    "end_ts": 138,
+    "speaker": "Andre Whitfield",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 139,
+    "end_ts": 147,
+    "speaker": "Loretta Whitfield",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 148,
+    "end_ts": 154,
+    "speaker": "Andre Whitfield",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 155,
+    "end_ts": 158,
+    "speaker": "Loretta Whitfield",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 159,
+    "end_ts": 168,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 169,
+    "end_ts": 172,
+    "speaker": "Loretta Whitfield",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 173,
+    "end_ts": 183,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 184,
+    "end_ts": 193,
+    "speaker": "Loretta Whitfield",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 194,
+    "end_ts": 201,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 202,
+    "end_ts": 211,
+    "speaker": "Loretta Whitfield",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 212,
+    "end_ts": 221,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 222,
+    "end_ts": 225,
+    "speaker": "Loretta Whitfield",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 226,
+    "end_ts": 233,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 234,
+    "end_ts": 240,
+    "speaker": "Loretta Whitfield",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 241,
+    "end_ts": 250,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 251,
+    "end_ts": 258,
+    "speaker": "Loretta Whitfield",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 259,
+    "end_ts": 266,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 267,
+    "end_ts": 275,
+    "speaker": "Loretta Whitfield",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 276,
+    "end_ts": 337,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-014",
+  "date": "2018-09-10",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene",
+   "Enrique Banks"
+  ],
+  "duration": 353,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 12,
+    "speaker": "Enrique Banks",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 13,
+    "end_ts": 19,
+    "speaker": "Tasha Greene",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 20,
+    "end_ts": 28,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 29,
+    "end_ts": 36,
+    "speaker": "Tasha Greene",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 37,
+    "end_ts": 46,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 47,
+    "end_ts": 55,
+    "speaker": "Enrique Banks",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 56,
+    "end_ts": 59,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 60,
+    "end_ts": 70,
+    "speaker": "Tasha Greene",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 71,
+    "end_ts": 82,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 83,
+    "end_ts": 87,
+    "speaker": "Enrique Banks",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 88,
+    "end_ts": 98,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 99,
+    "end_ts": 109,
+    "speaker": "Tasha Greene",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 110,
+    "end_ts": 115,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 116,
+    "end_ts": 127,
+    "speaker": "Enrique Banks",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 128,
+    "end_ts": 137,
+    "speaker": "Andre Whitfield",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 138,
+    "end_ts": 145,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 146,
+    "end_ts": 157,
+    "speaker": "Andre Whitfield",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 158,
+    "end_ts": 168,
+    "speaker": "Enrique Banks",
+    "text": "Who else on the line?"
+   },
+   {
+    "start_ts": 169,
+    "end_ts": 179,
+    "speaker": "Tasha Greene",
+    "text": "It's just me and you and Dre, Rico."
+   },
+   {
+    "start_ts": 180,
+    "end_ts": 185,
+    "speaker": "Enrique Banks",
+    "text": "Aight, I'm not saying nothing on here anyway."
+   },
+   {
+    "start_ts": 186,
+    "end_ts": 196,
+    "speaker": "Tasha Greene",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 197,
+    "end_ts": 203,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 204,
+    "end_ts": 209,
+    "speaker": "Tasha Greene",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 210,
+    "end_ts": 214,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 215,
+    "end_ts": 221,
+    "speaker": "Tasha Greene",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 222,
+    "end_ts": 232,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 233,
+    "end_ts": 244,
+    "speaker": "Tasha Greene",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 245,
+    "end_ts": 248,
+    "speaker": "Andre Whitfield",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 249,
+    "end_ts": 260,
+    "speaker": "Tasha Greene",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 261,
+    "end_ts": 272,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 273,
+    "end_ts": 276,
+    "speaker": "Tasha Greene",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 277,
+    "end_ts": 288,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 289,
+    "end_ts": 297,
+    "speaker": "Tasha Greene",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 298,
+    "end_ts": 303,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 304,
+    "end_ts": 314,
+    "speaker": "Tasha Greene",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 315,
+    "end_ts": 323,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 324,
+    "end_ts": 332,
+    "speaker": "Tasha Greene",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 333,
+    "end_ts": 353,
+    "speaker": "Enrique Banks",
+    "text": "Boy, stop."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-015",
+  "date": "2018-09-28",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Jamal Pierce"
+  ],
+  "duration": 356,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 15,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 16,
+    "end_ts": 23,
+    "speaker": "Jamal Pierce",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 24,
+    "end_ts": 31,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 32,
+    "end_ts": 38,
+    "speaker": "Jamal Pierce",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 39,
+    "end_ts": 47,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 48,
+    "end_ts": 51,
+    "speaker": "Jamal Pierce",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 52,
+    "end_ts": 57,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 58,
+    "end_ts": 65,
+    "speaker": "Jamal Pierce",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 66,
+    "end_ts": 74,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 75,
+    "end_ts": 83,
+    "speaker": "Jamal Pierce",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 84,
+    "end_ts": 92,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 93,
+    "end_ts": 103,
+    "speaker": "Jamal Pierce",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 104,
+    "end_ts": 115,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 116,
+    "end_ts": 120,
+    "speaker": "Jamal Pierce",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 121,
+    "end_ts": 132,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 133,
+    "end_ts": 138,
+    "speaker": "Jamal Pierce",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 139,
+    "end_ts": 147,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 148,
+    "end_ts": 159,
+    "speaker": "Jamal Pierce",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 160,
+    "end_ts": 167,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 168,
+    "end_ts": 177,
+    "speaker": "Jamal Pierce",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 178,
+    "end_ts": 185,
+    "speaker": "Andre Whitfield",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 186,
+    "end_ts": 192,
+    "speaker": "Jamal Pierce",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 193,
+    "end_ts": 199,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 200,
+    "end_ts": 205,
+    "speaker": "Jamal Pierce",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 206,
+    "end_ts": 217,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 218,
+    "end_ts": 225,
+    "speaker": "Jamal Pierce",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 226,
+    "end_ts": 229,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 230,
+    "end_ts": 241,
+    "speaker": "Jamal Pierce",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 242,
+    "end_ts": 252,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 253,
+    "end_ts": 260,
+    "speaker": "Jamal Pierce",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 261,
+    "end_ts": 268,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 269,
+    "end_ts": 273,
+    "speaker": "Jamal Pierce",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 274,
+    "end_ts": 285,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 286,
+    "end_ts": 291,
+    "speaker": "Jamal Pierce",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 292,
+    "end_ts": 356,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-016",
+  "date": "2018-10-01",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 267,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 12,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 13,
+    "end_ts": 23,
+    "speaker": "Tasha Greene",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 24,
+    "end_ts": 33,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 34,
+    "end_ts": 38,
+    "speaker": "Tasha Greene",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 39,
+    "end_ts": 42,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 43,
+    "end_ts": 51,
+    "speaker": "Tasha Greene",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 52,
+    "end_ts": 59,
+    "speaker": "Andre Whitfield",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 60,
+    "end_ts": 69,
+    "speaker": "Tasha Greene",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 70,
+    "end_ts": 74,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 75,
+    "end_ts": 82,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 83,
+    "end_ts": 88,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 89,
+    "end_ts": 96,
+    "speaker": "Tasha Greene",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 97,
+    "end_ts": 101,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 102,
+    "end_ts": 108,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 109,
+    "end_ts": 115,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 116,
+    "end_ts": 119,
+    "speaker": "Tasha Greene",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 120,
+    "end_ts": 127,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 128,
+    "end_ts": 134,
+    "speaker": "Tasha Greene",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 135,
+    "end_ts": 145,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 146,
+    "end_ts": 155,
+    "speaker": "Tasha Greene",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 156,
+    "end_ts": 161,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 162,
+    "end_ts": 168,
+    "speaker": "Tasha Greene",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 169,
+    "end_ts": 174,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 175,
+    "end_ts": 178,
+    "speaker": "Tasha Greene",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 179,
+    "end_ts": 182,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 183,
+    "end_ts": 267,
+    "speaker": "Tasha Greene",
+    "text": "Everybody at church said they praying for you."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-017",
+  "date": "2018-10-06",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 314,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 13,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 14,
+    "end_ts": 17,
+    "speaker": "Tasha Greene",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 18,
+    "end_ts": 24,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 25,
+    "end_ts": 33,
+    "speaker": "Tasha Greene",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 34,
+    "end_ts": 38,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 39,
+    "end_ts": 46,
+    "speaker": "Tasha Greene",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 47,
+    "end_ts": 54,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 55,
+    "end_ts": 66,
+    "speaker": "Tasha Greene",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 67,
+    "end_ts": 73,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 74,
+    "end_ts": 78,
+    "speaker": "Tasha Greene",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 79,
+    "end_ts": 86,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 87,
+    "end_ts": 94,
+    "speaker": "Andre Whitfield",
+    "text": "Tell Rico get rid of the green one, take it out past the quarry in Dunmore."
+   },
+   {
+    "start_ts": 95,
+    "end_ts": 106,
+    "speaker": "Tasha Greene",
+    "text": "Why you keep bringing that up?"
+   },
+   {
+    "start_ts": 107,
+    "end_ts": 112,
+    "speaker": "Andre Whitfield",
+    "text": "Just tell him, it's been sitting at his cousin's too long."
+   },
+   {
+    "start_ts": 113,
+    "end_ts": 119,
+    "speaker": "Tasha Greene",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 120,
+    "end_ts": 128,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 129,
+    "end_ts": 134,
+    "speaker": "Tasha Greene",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 135,
+    "end_ts": 141,
+    "speaker": "Andre Whitfield",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 142,
+    "end_ts": 151,
+    "speaker": "Tasha Greene",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 152,
+    "end_ts": 160,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 161,
+    "end_ts": 167,
+    "speaker": "Tasha Greene",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 168,
+    "end_ts": 179,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 180,
+    "end_ts": 187,
+    "speaker": "Tasha Greene",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 188,
+    "end_ts": 191,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 192,
+    "end_ts": 196,
+    "speaker": "Tasha Greene",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 197,
+    "end_ts": 204,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 205,
+    "end_ts": 214,
+    "speaker": "Tasha Greene",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 215,
+    "end_ts": 222,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 223,
+    "end_ts": 232,
+    "speaker": "Tasha Greene",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 233,
+    "end_ts": 238,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 239,
+    "end_ts": 243,
+    "speaker": "Tasha Greene",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 244,
+    "end_ts": 250,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 251,
+    "end_ts": 256,
+    "speaker": "Tasha Greene",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 257,
+    "end_ts": 314,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-018",
+  "date": "2018-10-17",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 207,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 9,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 10,
+    "end_ts": 16,
+    "speaker": "Tasha Greene",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 17,
+    "end_ts": 22,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 23,
+    "end_ts": 31,
+    "speaker": "Tasha Greene",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 32,
+    "end_ts": 38,
+    "speaker": "Andre Whitfield",
+    "text": "It cut off, like I was saying."
+   },
+   {
+    "start_ts": 39,
+    "end_ts": 45,
+    "speaker": "Andre Whitfield",
+    "text": "Tell Rico get rid of the green one, out past the quarry, for real."
+   },
+   {
+    "start_ts": 46,
+    "end_ts": 57,
+    "speaker": "Tasha Greene",
+    "text": "I heard you the first time."
+   },
+   {
+    "start_ts": 58,
+    "end_ts": 66,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 67,
+    "end_ts": 77,
+    "speaker": "Tasha Greene",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 78,
+    "end_ts": 87,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 88,
+    "end_ts": 91,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 92,
+    "end_ts": 97,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 98,
+    "end_ts": 104,
+    "speaker": "Tasha Greene",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 105,
+    "end_ts": 114,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 115,
+    "end_ts": 122,
+    "speaker": "Tasha Greene",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 123,
+    "end_ts": 134,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 135,
+    "end_ts": 138,
+    "speaker": "Tasha Greene",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 139,
+    "end_ts": 146,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 147,
+    "end_ts": 156,
+    "speaker": "Tasha Greene",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 157,
+    "end_ts": 167,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 168,
+    "end_ts": 172,
+    "speaker": "Tasha Greene",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 173,
+    "end_ts": 179,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 180,
+    "end_ts": 207,
+    "speaker": "Tasha Greene",
+    "text": "I hear you."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-019",
+  "date": "2018-10-08",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 165,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 13,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 14,
+    "end_ts": 24,
+    "speaker": "Tasha Greene",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 25,
+    "end_ts": 29,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 30,
+    "end_ts": 39,
+    "speaker": "Tasha Greene",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 40,
+    "end_ts": 45,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 46,
+    "end_ts": 55,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 56,
+    "end_ts": 63,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 64,
+    "end_ts": 69,
+    "speaker": "Tasha Greene",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 70,
+    "end_ts": 74,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 75,
+    "end_ts": 80,
+    "speaker": "Tasha Greene",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 81,
+    "end_ts": 91,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 92,
+    "end_ts": 102,
+    "speaker": "Tasha Greene",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 103,
+    "end_ts": 107,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 108,
+    "end_ts": 112,
+    "speaker": "Tasha Greene",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 113,
+    "end_ts": 122,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 123,
+    "end_ts": 165,
+    "speaker": "Tasha Greene",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-020",
+  "date": "2018-10-22",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Loretta Whitfield"
+  ],
+  "duration": 244,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 14,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 15,
+    "end_ts": 24,
+    "speaker": "Loretta Whitfield",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 25,
+    "end_ts": 36,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 37,
+    "end_ts": 45,
+    "speaker": "Loretta Whitfield",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 46,
+    "end_ts": 53,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 54,
+    "end_ts": 64,
+    "speaker": "Loretta Whitfield",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 65,
+    "end_ts": 75,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 76,
+    "end_ts": 81,
+    "speaker": "Loretta Whitfield",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 82,
+    "end_ts": 93,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 94,
+    "end_ts": 102,
+    "speaker": "Loretta Whitfield",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 103,
+    "end_ts": 114,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 115,
+    "end_ts": 120,
+    "speaker": "Loretta Whitfield",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 121,
+    "end_ts": 129,
+    "speaker": "Loretta Whitfield",
+    "text": "Baby, you know you didn't come home till after midnight that night, Dre."
+   },
+   {
+    "start_ts": 130,
+    "end_ts": 141,
+    "speaker": "Andre Whitfield",
+    "text": "Mama, not on the phone."
+   },
+   {
+    "start_ts": 142,
+    "end_ts": 148,
+    "speaker": "Loretta Whitfield",
+    "text": "I'm just saying what I remember."
+   },
+   {
+    "start_ts": 149,
+    "end_ts": 153,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 154,
+    "end_ts": 159,
+    "speaker": "Loretta Whitfield",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 160,
+    "end_ts": 171,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 172,
+    "end_ts": 181,
+    "speaker": "Loretta Whitfield",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 182,
+    "end_ts": 193,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 194,
+    "end_ts": 205,
+    "speaker": "Loretta Whitfield",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 206,
+    "end_ts": 213,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 214,
+    "end_ts": 222,
+    "speaker": "Loretta Whitfield",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 223,
+    "end_ts": 232,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 233,
+    "end_ts": 244,
+    "speaker": "Loretta Whitfield",
+    "text": "You eating okay in there?"
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-021",
+  "date": "2018-11-06",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 296,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 17,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 18,
+    "end_ts": 27,
+    "speaker": "Tasha Greene",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 28,
+    "end_ts": 35,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 36,
+    "end_ts": 40,
+    "speaker": "Tasha Greene",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 41,
+    "end_ts": 47,
+    "speaker": "Andre Whitfield",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 48,
+    "end_ts": 57,
+    "speaker": "Tasha Greene",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 58,
+    "end_ts": 67,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 68,
+    "end_ts": 74,
+    "speaker": "Tasha Greene",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 75,
+    "end_ts": 78,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 79,
+    "end_ts": 82,
+    "speaker": "Tasha Greene",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 83,
+    "end_ts": 90,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 91,
+    "end_ts": 96,
+    "speaker": "Tasha Greene",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 97,
+    "end_ts": 106,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 107,
+    "end_ts": 116,
+    "speaker": "Tasha Greene",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 117,
+    "end_ts": 128,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 129,
+    "end_ts": 140,
+    "speaker": "Tasha Greene",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 141,
+    "end_ts": 148,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 149,
+    "end_ts": 154,
+    "speaker": "Tasha Greene",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 155,
+    "end_ts": 164,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 165,
+    "end_ts": 169,
+    "speaker": "Tasha Greene",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 170,
+    "end_ts": 180,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 181,
+    "end_ts": 185,
+    "speaker": "Tasha Greene",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 186,
+    "end_ts": 193,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 194,
+    "end_ts": 201,
+    "speaker": "Tasha Greene",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 202,
+    "end_ts": 206,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 207,
+    "end_ts": 211,
+    "speaker": "Tasha Greene",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 212,
+    "end_ts": 218,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 219,
+    "end_ts": 222,
+    "speaker": "Tasha Greene",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 223,
+    "end_ts": 296,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-022",
+  "date": "2018-11-08",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Enrique Banks"
+  ],
+  "duration": 132,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 13,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 14,
+    "end_ts": 23,
+    "speaker": "Enrique Banks",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 24,
+    "end_ts": 27,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 28,
+    "end_ts": 38,
+    "speaker": "Enrique Banks",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 39,
+    "end_ts": 44,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 45,
+    "end_ts": 53,
+    "speaker": "Enrique Banks",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 54,
+    "end_ts": 60,
+    "speaker": "Andre Whitfield",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 61,
+    "end_ts": 67,
+    "speaker": "Enrique Banks",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 68,
+    "end_ts": 71,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 72,
+    "end_ts": 78,
+    "speaker": "Enrique Banks",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 79,
+    "end_ts": 82,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 83,
+    "end_ts": 87,
+    "speaker": "Enrique Banks",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 88,
+    "end_ts": 132,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-023",
+  "date": "2018-11-28",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Loretta Whitfield"
+  ],
+  "duration": 308,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 17,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 18,
+    "end_ts": 25,
+    "speaker": "Loretta Whitfield",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 26,
+    "end_ts": 36,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 37,
+    "end_ts": 43,
+    "speaker": "Loretta Whitfield",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 44,
+    "end_ts": 54,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 55,
+    "end_ts": 65,
+    "speaker": "Loretta Whitfield",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 66,
+    "end_ts": 75,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 76,
+    "end_ts": 85,
+    "speaker": "Loretta Whitfield",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 86,
+    "end_ts": 93,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 94,
+    "end_ts": 98,
+    "speaker": "Loretta Whitfield",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 99,
+    "end_ts": 104,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 105,
+    "end_ts": 116,
+    "speaker": "Loretta Whitfield",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 117,
+    "end_ts": 128,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 129,
+    "end_ts": 139,
+    "speaker": "Loretta Whitfield",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 140,
+    "end_ts": 147,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 148,
+    "end_ts": 153,
+    "speaker": "Loretta Whitfield",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 154,
+    "end_ts": 165,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 166,
+    "end_ts": 170,
+    "speaker": "Loretta Whitfield",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 171,
+    "end_ts": 176,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 177,
+    "end_ts": 182,
+    "speaker": "Loretta Whitfield",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 183,
+    "end_ts": 194,
+    "speaker": "Andre Whitfield",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 195,
+    "end_ts": 203,
+    "speaker": "Loretta Whitfield",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 204,
+    "end_ts": 210,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 211,
+    "end_ts": 220,
+    "speaker": "Loretta Whitfield",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 221,
+    "end_ts": 232,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 233,
+    "end_ts": 242,
+    "speaker": "Loretta Whitfield",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 243,
+    "end_ts": 247,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 248,
+    "end_ts": 254,
+    "speaker": "Loretta Whitfield",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 255,
+    "end_ts": 261,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 262,
+    "end_ts": 308,
+    "speaker": "Loretta Whitfield",
+    "text": "I put twenty on there yesterday, check it."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-024",
+  "date": "2018-11-14",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene",
+   "Enrique Banks"
+  ],
+  "duration": 340,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 16,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 17,
+    "end_ts": 24,
+    "speaker": "Tasha Greene",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 25,
+    "end_ts": 34,
+    "speaker": "Enrique Banks",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 35,
+    "end_ts": 42,
+    "speaker": "Tasha Greene",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 43,
+    "end_ts": 54,
+    "speaker": "Andre Whitfield",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 55,
+    "end_ts": 58,
+    "speaker": "Enrique Banks",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 59,
+    "end_ts": 62,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 63,
+    "end_ts": 71,
+    "speaker": "Tasha Greene",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 72,
+    "end_ts": 81,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 82,
+    "end_ts": 86,
+    "speaker": "Enrique Banks",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 87,
+    "end_ts": 93,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 94,
+    "end_ts": 100,
+    "speaker": "Tasha Greene",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 101,
+    "end_ts": 112,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 113,
+    "end_ts": 116,
+    "speaker": "Tasha Greene",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 117,
+    "end_ts": 125,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 126,
+    "end_ts": 137,
+    "speaker": "Tasha Greene",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 138,
+    "end_ts": 143,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 144,
+    "end_ts": 147,
+    "speaker": "Tasha Greene",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 148,
+    "end_ts": 157,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 158,
+    "end_ts": 164,
+    "speaker": "Tasha Greene",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 165,
+    "end_ts": 170,
+    "speaker": "Enrique Banks",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 171,
+    "end_ts": 182,
+    "speaker": "Enrique Banks",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 183,
+    "end_ts": 190,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 191,
+    "end_ts": 202,
+    "speaker": "Tasha Greene",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 203,
+    "end_ts": 208,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 209,
+    "end_ts": 214,
+    "speaker": "Tasha Greene",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 215,
+    "end_ts": 222,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 223,
+    "end_ts": 229,
+    "speaker": "Tasha Greene",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 230,
+    "end_ts": 238,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 239,
+    "end_ts": 248,
+    "speaker": "Tasha Greene",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 249,
+    "end_ts": 254,
+    "speaker": "Enrique Banks",
+    "text": "They pulled me over in Ashby last week, just a ticket."
+   },
+   {
+    "start_ts": 255,
+    "end_ts": 264,
+    "speaker": "Tasha Greene",
+    "text": "Rico, you need to slow down for real."
+   },
+   {
+    "start_ts": 265,
+    "end_ts": 274,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 275,
+    "end_ts": 281,
+    "speaker": "Tasha Greene",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 282,
+    "end_ts": 285,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 286,
+    "end_ts": 340,
+    "speaker": "Tasha Greene",
+    "text": "[inaudible] the bus was late again."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-025",
+  "date": "2018-11-16",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Jamal Pierce"
+  ],
+  "duration": 295,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 14,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 15,
+    "end_ts": 18,
+    "speaker": "Jamal Pierce",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 19,
+    "end_ts": 24,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 25,
+    "end_ts": 29,
+    "speaker": "Jamal Pierce",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 30,
+    "end_ts": 33,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 34,
+    "end_ts": 41,
+    "speaker": "Jamal Pierce",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 42,
+    "end_ts": 46,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 47,
+    "end_ts": 54,
+    "speaker": "Jamal Pierce",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 55,
+    "end_ts": 59,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 60,
+    "end_ts": 64,
+    "speaker": "Jamal Pierce",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 65,
+    "end_ts": 69,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 70,
+    "end_ts": 79,
+    "speaker": "Jamal Pierce",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 80,
+    "end_ts": 84,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 85,
+    "end_ts": 92,
+    "speaker": "Jamal Pierce",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 93,
+    "end_ts": 103,
+    "speaker": "Andre Whitfield",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 104,
+    "end_ts": 108,
+    "speaker": "Jamal Pierce",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 109,
+    "end_ts": 118,
+    "speaker": "Andre Whitfield",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 119,
+    "end_ts": 124,
+    "speaker": "Jamal Pierce",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 125,
+    "end_ts": 129,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 130,
+    "end_ts": 137,
+    "speaker": "Jamal Pierce",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 138,
+    "end_ts": 147,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 148,
+    "end_ts": 157,
+    "speaker": "Jamal Pierce",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 158,
+    "end_ts": 165,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 166,
+    "end_ts": 175,
+    "speaker": "Jamal Pierce",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 176,
+    "end_ts": 186,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 187,
+    "end_ts": 193,
+    "speaker": "Jamal Pierce",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 194,
+    "end_ts": 198,
+    "speaker": "Andre Whitfield",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 199,
+    "end_ts": 207,
+    "speaker": "Jamal Pierce",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 208,
+    "end_ts": 295,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-026",
+  "date": "2018-12-01",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Tasha Greene"
+  ],
+  "duration": 314,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 17,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 18,
+    "end_ts": 27,
+    "speaker": "Tasha Greene",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 28,
+    "end_ts": 38,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 39,
+    "end_ts": 49,
+    "speaker": "Tasha Greene",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 50,
+    "end_ts": 59,
+    "speaker": "Andre Whitfield",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 60,
+    "end_ts": 66,
+    "speaker": "Tasha Greene",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 67,
+    "end_ts": 75,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 76,
+    "end_ts": 79,
+    "speaker": "Tasha Greene",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 80,
+    "end_ts": 89,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 90,
+    "end_ts": 97,
+    "speaker": "Tasha Greene",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 98,
+    "end_ts": 103,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 104,
+    "end_ts": 114,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 115,
+    "end_ts": 120,
+    "speaker": "Andre Whitfield",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 121,
+    "end_ts": 125,
+    "speaker": "Tasha Greene",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 126,
+    "end_ts": 130,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 131,
+    "end_ts": 137,
+    "speaker": "Tasha Greene",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 138,
+    "end_ts": 148,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 149,
+    "end_ts": 155,
+    "speaker": "Tasha Greene",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 156,
+    "end_ts": 160,
+    "speaker": "Andre Whitfield",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 161,
+    "end_ts": 171,
+    "speaker": "Tasha Greene",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 172,
+    "end_ts": 176,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 177,
+    "end_ts": 181,
+    "speaker": "Tasha Greene",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 182,
+    "end_ts": 190,
+    "speaker": "Andre Whitfield",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 191,
+    "end_ts": 197,
+    "speaker": "Tasha Greene",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 198,
+    "end_ts": 208,
+    "speaker": "Andre Whitfield",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 209,
+    "end_ts": 219,
+    "speaker": "Tasha Greene",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 220,
+    "end_ts": 226,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 227,
+    "end_ts": 235,
+    "speaker": "Tasha Greene",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 236,
+    "end_ts": 242,
+    "speaker": "Andre Whitfield",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 243,
+    "end_ts": 247,
+    "speaker": "Tasha Greene",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 248,
+    "end_ts": 314,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-027",
+  "date": "2018-12-28",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Enrique Banks"
+  ],
+  "duration": 276,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 14,
+    "speaker": "Andre Whitfield",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 15,
+    "end_ts": 18,
+    "speaker": "Enrique Banks",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 19,
+    "end_ts": 30,
+    "speaker": "Andre Whitfield",
+    "text": "Word."
+   },
+   {
+    "start_ts": 31,
+    "end_ts": 37,
+    "speaker": "Enrique Banks",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 38,
+    "end_ts": 42,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 43,
+    "end_ts": 48,
+    "speaker": "Enrique Banks",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 49,
+    "end_ts": 55,
+    "speaker": "Andre Whitfield",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 56,
+    "end_ts": 66,
+    "speaker": "Enrique Banks",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 67,
+    "end_ts": 70,
+    "speaker": "Andre Whitfield",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 71,
+    "end_ts": 78,
+    "speaker": "Enrique Banks",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 79,
+    "end_ts": 82,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 83,
+    "end_ts": 89,
+    "speaker": "Enrique Banks",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 90,
+    "end_ts": 95,
+    "speaker": "Andre Whitfield",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 96,
+    "end_ts": 104,
+    "speaker": "Enrique Banks",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 105,
+    "end_ts": 111,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 112,
+    "end_ts": 118,
+    "speaker": "Enrique Banks",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 119,
+    "end_ts": 123,
+    "speaker": "Andre Whitfield",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 124,
+    "end_ts": 128,
+    "speaker": "Enrique Banks",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 129,
+    "end_ts": 137,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 138,
+    "end_ts": 141,
+    "speaker": "Enrique Banks",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 142,
+    "end_ts": 152,
+    "speaker": "Andre Whitfield",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 153,
+    "end_ts": 163,
+    "speaker": "Enrique Banks",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 164,
+    "end_ts": 168,
+    "speaker": "Andre Whitfield",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 169,
+    "end_ts": 177,
+    "speaker": "Enrique Banks",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 178,
+    "end_ts": 185,
+    "speaker": "Andre Whitfield",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 186,
+    "end_ts": 190,
+    "speaker": "Enrique Banks",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 191,
+    "end_ts": 276,
+    "speaker": "Andre Whitfield",
+    "text": "My knee been hurting since I fell on the stairs."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-028",
+  "date": "2018-12-08",
+  "facility": "Merritt County Jail",
+  "inmate": "Andre Whitfield",
+  "participants": [
+   "Andre Whitfield",
+   "Loretta Whitfield"
+  ],
+  "duration": 134,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 15,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 16,
+    "end_ts": 19,
+    "speaker": "Loretta Whitfield",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 20,
+    "end_ts": 29,
+    "speaker": "Andre Whitfield",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 30,
+    "end_ts": 39,
+    "speaker": "Loretta Whitfield",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 40,
+    "end_ts": 50,
+    "speaker": "Andre Whitfield",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 51,
+    "end_ts": 58,
+    "speaker": "Loretta Whitfield",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 59,
+    "end_ts": 64,
+    "speaker": "Andre Whitfield",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 65,
+    "end_ts": 71,
+    "speaker": "Loretta Whitfield",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 72,
+    "end_ts": 77,
+    "speaker": "Andre Whitfield",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 78,
+    "end_ts": 85,
+    "speaker": "Loretta Whitfield",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 86,
+    "end_ts": 97,
+    "speaker": "Andre Whitfield",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 98,
+    "end_ts": 107,
+    "speaker": "Loretta Whitfield",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 108,
+    "end_ts": 134,
+    "speaker": "Andre Whitfield",
+    "text": "Hold on, hold on, somebody yelling."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-029",
+  "date": "2018-12-20",
+  "facility": "Merritt County Jail",
+  "inmate": "Kevin Lopez",
+  "participants": [
+   "Kevin Lopez",
+   "Maria Lopez"
+  ],
+  "duration": 146,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 17,
+    "speaker": "Kevin Lopez",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 18,
+    "end_ts": 25,
+    "speaker": "Maria Lopez",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 26,
+    "end_ts": 34,
+    "speaker": "Kevin Lopez",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 35,
+    "end_ts": 39,
+    "speaker": "Maria Lopez",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 40,
+    "end_ts": 48,
+    "speaker": "Kevin Lopez",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 49,
+    "end_ts": 53,
+    "speaker": "Maria Lopez",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 54,
+    "end_ts": 60,
+    "speaker": "Kevin Lopez",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 61,
+    "end_ts": 70,
+    "speaker": "Maria Lopez",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 71,
+    "end_ts": 74,
+    "speaker": "Kevin Lopez",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 75,
+    "end_ts": 81,
+    "speaker": "Maria Lopez",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 82,
+    "end_ts": 86,
+    "speaker": "Kevin Lopez",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 87,
+    "end_ts": 90,
+    "speaker": "Maria Lopez",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 91,
+    "end_ts": 94,
+    "speaker": "Kevin Lopez",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 95,
+    "end_ts": 146,
+    "speaker": "Maria Lopez",
+    "text": "Boy, stop."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-030",
+  "date": "2018-12-25",
+  "facility": "Merritt County Jail",
+  "inmate": "Kevin Lopez",
+  "participants": [
+   "Kevin Lopez",
+   "Luis Ortega"
+  ],
+  "duration": 208,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 10,
+    "speaker": "Kevin Lopez",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 11,
+    "end_ts": 19,
+    "speaker": "Luis Ortega",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 20,
+    "end_ts": 31,
+    "speaker": "Kevin Lopez",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 32,
+    "end_ts": 40,
+    "speaker": "Luis Ortega",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 41,
+    "end_ts": 47,
+    "speaker": "Kevin Lopez",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 48,
+    "end_ts": 55,
+    "speaker": "Luis Ortega",
+    "text": "I'm at work, I only got a minute."
+   },
+   {
+    "start_ts": 56,
+    "end_ts": 63,
+    "speaker": "Kevin Lopez",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 64,
+    "end_ts": 69,
+    "speaker": "Luis Ortega",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 70,
+    "end_ts": 75,
+    "speaker": "Kevin Lopez",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 76,
+    "end_ts": 79,
+    "speaker": "Luis Ortega",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 80,
+    "end_ts": 90,
+    "speaker": "Kevin Lopez",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 91,
+    "end_ts": 97,
+    "speaker": "Luis Ortega",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 98,
+    "end_ts": 102,
+    "speaker": "Kevin Lopez",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 103,
+    "end_ts": 107,
+    "speaker": "Luis Ortega",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 108,
+    "end_ts": 111,
+    "speaker": "Kevin Lopez",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 112,
+    "end_ts": 116,
+    "speaker": "Luis Ortega",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 117,
+    "end_ts": 121,
+    "speaker": "Kevin Lopez",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 122,
+    "end_ts": 125,
+    "speaker": "Luis Ortega",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 126,
+    "end_ts": 130,
+    "speaker": "Kevin Lopez",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 131,
+    "end_ts": 208,
+    "speaker": "Luis Ortega",
+    "text": "Mm-hm."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-031",
+  "date": "2019-01-08",
+  "facility": "Merritt County Jail",
+  "inmate": "Kevin Lopez",
+  "participants": [
+   "Kevin Lopez",
+   "Maria Lopez"
+  ],
+  "duration": 314,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 16,
+    "speaker": "Kevin Lopez",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 17,
+    "end_ts": 28,
+    "speaker": "Maria Lopez",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 29,
+    "end_ts": 33,
+    "speaker": "Kevin Lopez",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 34,
+    "end_ts": 41,
+    "speaker": "Maria Lopez",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 42,
+    "end_ts": 53,
+    "speaker": "Kevin Lopez",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 54,
+    "end_ts": 57,
+    "speaker": "Maria Lopez",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 58,
+    "end_ts": 69,
+    "speaker": "Kevin Lopez",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 70,
+    "end_ts": 76,
+    "speaker": "Maria Lopez",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 77,
+    "end_ts": 86,
+    "speaker": "Kevin Lopez",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 87,
+    "end_ts": 91,
+    "speaker": "Maria Lopez",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 92,
+    "end_ts": 102,
+    "speaker": "Kevin Lopez",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 103,
+    "end_ts": 109,
+    "speaker": "Maria Lopez",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 110,
+    "end_ts": 113,
+    "speaker": "Kevin Lopez",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 114,
+    "end_ts": 123,
+    "speaker": "Maria Lopez",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 124,
+    "end_ts": 128,
+    "speaker": "Kevin Lopez",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 129,
+    "end_ts": 139,
+    "speaker": "Maria Lopez",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 140,
+    "end_ts": 146,
+    "speaker": "Kevin Lopez",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 147,
+    "end_ts": 157,
+    "speaker": "Maria Lopez",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 158,
+    "end_ts": 162,
+    "speaker": "Kevin Lopez",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 163,
+    "end_ts": 171,
+    "speaker": "Maria Lopez",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 172,
+    "end_ts": 180,
+    "speaker": "Kevin Lopez",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 181,
+    "end_ts": 184,
+    "speaker": "Maria Lopez",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 185,
+    "end_ts": 194,
+    "speaker": "Kevin Lopez",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 195,
+    "end_ts": 204,
+    "speaker": "Maria Lopez",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 205,
+    "end_ts": 214,
+    "speaker": "Kevin Lopez",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 215,
+    "end_ts": 224,
+    "speaker": "Maria Lopez",
+    "text": "Mama said the detective called the house."
+   },
+   {
+    "start_ts": 225,
+    "end_ts": 229,
+    "speaker": "Kevin Lopez",
+    "text": "I wasn't even there that night, ask anybody."
+   },
+   {
+    "start_ts": 230,
+    "end_ts": 234,
+    "speaker": "Maria Lopez",
+    "text": "I'm not the one you gotta convince."
+   },
+   {
+    "start_ts": 235,
+    "end_ts": 245,
+    "speaker": "Maria Lopez",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 246,
+    "end_ts": 250,
+    "speaker": "Kevin Lopez",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 251,
+    "end_ts": 259,
+    "speaker": "Maria Lopez",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 260,
+    "end_ts": 264,
+    "speaker": "Kevin Lopez",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 265,
+    "end_ts": 270,
+    "speaker": "Maria Lopez",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 271,
+    "end_ts": 314,
+    "speaker": "Kevin Lopez",
+    "text": "I been reading a lot, trying to keep my head right."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-032",
+  "date": "2019-01-08",
+  "facility": "Merritt County Jail",
+  "inmate": "Kevin Lopez",
+  "participants": [
+   "Kevin Lopez",
+   "Maria Lopez"
+  ],
+  "duration": 308,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 17,
+    "speaker": "Kevin Lopez",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 18,
+    "end_ts": 23,
+    "speaker": "Maria Lopez",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 24,
+    "end_ts": 28,
+    "speaker": "Kevin Lopez",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 29,
+    "end_ts": 33,
+    "speaker": "Maria Lopez",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 34,
+    "end_ts": 38,
+    "speaker": "Kevin Lopez",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 39,
+    "end_ts": 47,
+    "speaker": "Maria Lopez",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 48,
+    "end_ts": 57,
+    "speaker": "Kevin Lopez",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 58,
+    "end_ts": 67,
+    "speaker": "Maria Lopez",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 68,
+    "end_ts": 72,
+    "speaker": "Kevin Lopez",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 73,
+    "end_ts": 79,
+    "speaker": "Maria Lopez",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 80,
+    "end_ts": 84,
+    "speaker": "Kevin Lopez",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 85,
+    "end_ts": 90,
+    "speaker": "Maria Lopez",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 91,
+    "end_ts": 102,
+    "speaker": "Kevin Lopez",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 103,
+    "end_ts": 114,
+    "speaker": "Maria Lopez",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 115,
+    "end_ts": 120,
+    "speaker": "Kevin Lopez",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 121,
+    "end_ts": 125,
+    "speaker": "Maria Lopez",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 126,
+    "end_ts": 129,
+    "speaker": "Kevin Lopez",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 130,
+    "end_ts": 134,
+    "speaker": "Maria Lopez",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 135,
+    "end_ts": 139,
+    "speaker": "Kevin Lopez",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 140,
+    "end_ts": 150,
+    "speaker": "Maria Lopez",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 151,
+    "end_ts": 156,
+    "speaker": "Kevin Lopez",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 157,
+    "end_ts": 162,
+    "speaker": "Maria Lopez",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 163,
+    "end_ts": 171,
+    "speaker": "Kevin Lopez",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 172,
+    "end_ts": 182,
+    "speaker": "Maria Lopez",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 183,
+    "end_ts": 192,
+    "speaker": "Kevin Lopez",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 193,
+    "end_ts": 198,
+    "speaker": "Maria Lopez",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 199,
+    "end_ts": 202,
+    "speaker": "Kevin Lopez",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 203,
+    "end_ts": 206,
+    "speaker": "Maria Lopez",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 207,
+    "end_ts": 211,
+    "speaker": "Kevin Lopez",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 212,
+    "end_ts": 308,
+    "speaker": "Maria Lopez",
+    "text": "Rent went up again, I'm not playing."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-033",
+  "date": "2019-01-19",
+  "facility": "Merritt County Jail",
+  "inmate": "Kevin Lopez",
+  "participants": [
+   "Kevin Lopez",
+   "Maria Lopez"
+  ],
+  "duration": 216,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 15,
+    "speaker": "Kevin Lopez",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 16,
+    "end_ts": 22,
+    "speaker": "Maria Lopez",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 23,
+    "end_ts": 31,
+    "speaker": "Kevin Lopez",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 32,
+    "end_ts": 36,
+    "speaker": "Maria Lopez",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 37,
+    "end_ts": 43,
+    "speaker": "Kevin Lopez",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 44,
+    "end_ts": 53,
+    "speaker": "Maria Lopez",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 54,
+    "end_ts": 59,
+    "speaker": "Kevin Lopez",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 60,
+    "end_ts": 63,
+    "speaker": "Maria Lopez",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 64,
+    "end_ts": 68,
+    "speaker": "Kevin Lopez",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 69,
+    "end_ts": 79,
+    "speaker": "Maria Lopez",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 80,
+    "end_ts": 86,
+    "speaker": "Kevin Lopez",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 87,
+    "end_ts": 95,
+    "speaker": "Maria Lopez",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 96,
+    "end_ts": 104,
+    "speaker": "Kevin Lopez",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 105,
+    "end_ts": 114,
+    "speaker": "Maria Lopez",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 115,
+    "end_ts": 118,
+    "speaker": "Kevin Lopez",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 119,
+    "end_ts": 127,
+    "speaker": "Maria Lopez",
+    "text": "They asking about some pawn ticket with your name on it."
+   },
+   {
+    "start_ts": 128,
+    "end_ts": 133,
+    "speaker": "Kevin Lopez",
+    "text": "I just moved the watch for Dre at Lucky's, that's all I did."
+   },
+   {
+    "start_ts": 134,
+    "end_ts": 140,
+    "speaker": "Maria Lopez",
+    "text": "Kevin, you need to stop talking."
+   },
+   {
+    "start_ts": 141,
+    "end_ts": 152,
+    "speaker": "Maria Lopez",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 153,
+    "end_ts": 156,
+    "speaker": "Kevin Lopez",
+    "text": "I signed up for the GED class, starts in two weeks."
+   },
+   {
+    "start_ts": 157,
+    "end_ts": 167,
+    "speaker": "Maria Lopez",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 168,
+    "end_ts": 176,
+    "speaker": "Kevin Lopez",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 177,
+    "end_ts": 183,
+    "speaker": "Maria Lopez",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 184,
+    "end_ts": 216,
+    "speaker": "Kevin Lopez",
+    "text": "Did the letter come yet? I sent it Monday."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-034",
+  "date": "2019-01-14",
+  "facility": "Merritt County Jail",
+  "inmate": "Kevin Lopez",
+  "participants": [
+   "Kevin Lopez",
+   "Maria Lopez"
+  ],
+  "duration": 211,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 14,
+    "speaker": "Kevin Lopez",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 15,
+    "end_ts": 19,
+    "speaker": "Maria Lopez",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 20,
+    "end_ts": 24,
+    "speaker": "Kevin Lopez",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 25,
+    "end_ts": 36,
+    "speaker": "Maria Lopez",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 37,
+    "end_ts": 45,
+    "speaker": "Kevin Lopez",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 46,
+    "end_ts": 53,
+    "speaker": "Maria Lopez",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 54,
+    "end_ts": 62,
+    "speaker": "Kevin Lopez",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 63,
+    "end_ts": 72,
+    "speaker": "Maria Lopez",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 73,
+    "end_ts": 80,
+    "speaker": "Kevin Lopez",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 81,
+    "end_ts": 89,
+    "speaker": "Maria Lopez",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 90,
+    "end_ts": 97,
+    "speaker": "Kevin Lopez",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 98,
+    "end_ts": 109,
+    "speaker": "Maria Lopez",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 110,
+    "end_ts": 120,
+    "speaker": "Kevin Lopez",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 121,
+    "end_ts": 132,
+    "speaker": "Maria Lopez",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 133,
+    "end_ts": 141,
+    "speaker": "Kevin Lopez",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 142,
+    "end_ts": 145,
+    "speaker": "Maria Lopez",
+    "text": "I'm gonna try to come up there Saturday for visit."
+   },
+   {
+    "start_ts": 146,
+    "end_ts": 157,
+    "speaker": "Kevin Lopez",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 158,
+    "end_ts": 169,
+    "speaker": "Maria Lopez",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 170,
+    "end_ts": 178,
+    "speaker": "Kevin Lopez",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 179,
+    "end_ts": 186,
+    "speaker": "Maria Lopez",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 187,
+    "end_ts": 211,
+    "speaker": "Kevin Lopez",
+    "text": "On everything, I'm good, don't worry about me."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-035",
+  "date": "2019-01-08",
+  "facility": "Merritt County Jail",
+  "inmate": "Kevin Lopez",
+  "participants": [
+   "Kevin Lopez",
+   "Maria Lopez"
+  ],
+  "duration": 216,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 11,
+    "speaker": "Kevin Lopez",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 12,
+    "end_ts": 17,
+    "speaker": "Maria Lopez",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 18,
+    "end_ts": 23,
+    "speaker": "Kevin Lopez",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 24,
+    "end_ts": 29,
+    "speaker": "Maria Lopez",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 30,
+    "end_ts": 41,
+    "speaker": "Kevin Lopez",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 42,
+    "end_ts": 52,
+    "speaker": "Maria Lopez",
+    "text": "I put twenty on there yesterday, check it."
+   },
+   {
+    "start_ts": 53,
+    "end_ts": 62,
+    "speaker": "Kevin Lopez",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 63,
+    "end_ts": 68,
+    "speaker": "Maria Lopez",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 69,
+    "end_ts": 79,
+    "speaker": "Kevin Lopez",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 80,
+    "end_ts": 86,
+    "speaker": "Maria Lopez",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 87,
+    "end_ts": 92,
+    "speaker": "Kevin Lopez",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 93,
+    "end_ts": 102,
+    "speaker": "Maria Lopez",
+    "text": "Mm-hm."
+   },
+   {
+    "start_ts": 103,
+    "end_ts": 114,
+    "speaker": "Kevin Lopez",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 115,
+    "end_ts": 122,
+    "speaker": "Maria Lopez",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 123,
+    "end_ts": 134,
+    "speaker": "Kevin Lopez",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 135,
+    "end_ts": 146,
+    "speaker": "Maria Lopez",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 147,
+    "end_ts": 151,
+    "speaker": "Kevin Lopez",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 152,
+    "end_ts": 156,
+    "speaker": "Maria Lopez",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 157,
+    "end_ts": 163,
+    "speaker": "Kevin Lopez",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 164,
+    "end_ts": 173,
+    "speaker": "Maria Lopez",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 174,
+    "end_ts": 216,
+    "speaker": "Kevin Lopez",
+    "text": "The food in here is terrible, it's the same thing every day."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-036",
+  "date": "2019-02-28",
+  "facility": "Merritt County Jail",
+  "inmate": "Kevin Lopez",
+  "participants": [
+   "Kevin Lopez",
+   "Maria Lopez",
+   "Luis Ortega"
+  ],
+  "duration": 127,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 16,
+    "speaker": "Kevin Lopez",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 17,
+    "end_ts": 26,
+    "speaker": "Maria Lopez",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 27,
+    "end_ts": 33,
+    "speaker": "Kevin Lopez",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 34,
+    "end_ts": 43,
+    "speaker": "Luis Ortega",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 44,
+    "end_ts": 47,
+    "speaker": "Kevin Lopez",
+    "text": "Word."
+   },
+   {
+    "start_ts": 48,
+    "end_ts": 57,
+    "speaker": "Maria Lopez",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 58,
+    "end_ts": 65,
+    "speaker": "Kevin Lopez",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 66,
+    "end_ts": 69,
+    "speaker": "Maria Lopez",
+    "text": "The baby been asking about you."
+   },
+   {
+    "start_ts": 70,
+    "end_ts": 76,
+    "speaker": "Kevin Lopez",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 77,
+    "end_ts": 81,
+    "speaker": "Maria Lopez",
+    "text": "Rent went up again, I'm not playing."
+   },
+   {
+    "start_ts": 82,
+    "end_ts": 93,
+    "speaker": "Luis Ortega",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 94,
+    "end_ts": 127,
+    "speaker": "Maria Lopez",
+    "text": "Okay."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-037",
+  "date": "2019-02-23",
+  "facility": "Merritt County Jail",
+  "inmate": "Kevin Lopez",
+  "participants": [
+   "Kevin Lopez",
+   "Maria Lopez"
+  ],
+  "duration": 136,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 11,
+    "speaker": "Kevin Lopez",
+    "text": "On everything, I'm good, don't worry about me."
+   },
+   {
+    "start_ts": 12,
+    "end_ts": 15,
+    "speaker": "Maria Lopez",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 16,
+    "end_ts": 20,
+    "speaker": "Kevin Lopez",
+    "text": "My knee been hurting since I fell on the stairs."
+   },
+   {
+    "start_ts": 21,
+    "end_ts": 28,
+    "speaker": "Maria Lopez",
+    "text": "I hear you."
+   },
+   {
+    "start_ts": 29,
+    "end_ts": 36,
+    "speaker": "Kevin Lopez",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 37,
+    "end_ts": 46,
+    "speaker": "Maria Lopez",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 47,
+    "end_ts": 52,
+    "speaker": "Kevin Lopez",
+    "text": "Hold on, hold on, somebody yelling."
+   },
+   {
+    "start_ts": 53,
+    "end_ts": 64,
+    "speaker": "Maria Lopez",
+    "text": "You sound tired."
+   },
+   {
+    "start_ts": 65,
+    "end_ts": 70,
+    "speaker": "Kevin Lopez",
+    "text": "Word."
+   },
+   {
+    "start_ts": 71,
+    "end_ts": 77,
+    "speaker": "Maria Lopez",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 78,
+    "end_ts": 84,
+    "speaker": "Kevin Lopez",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 85,
+    "end_ts": 92,
+    "speaker": "Maria Lopez",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 93,
+    "end_ts": 136,
+    "speaker": "Kevin Lopez",
+    "text": "Tell the kids I said hi, tell them I love them."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-038",
+  "date": "2019-02-21",
+  "facility": "Merritt County Jail",
+  "inmate": "Kevin Lopez",
+  "participants": [
+   "Kevin Lopez",
+   "Maria Lopez"
+  ],
+  "duration": 125,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 17,
+    "speaker": "Kevin Lopez",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 18,
+    "end_ts": 23,
+    "speaker": "Maria Lopez",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 24,
+    "end_ts": 32,
+    "speaker": "Kevin Lopez",
+    "text": "I been reading a lot, trying to keep my head right."
+   },
+   {
+    "start_ts": 33,
+    "end_ts": 43,
+    "speaker": "Maria Lopez",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 44,
+    "end_ts": 50,
+    "speaker": "Kevin Lopez",
+    "text": "Put something on my books when you can, like forty."
+   },
+   {
+    "start_ts": 51,
+    "end_ts": 62,
+    "speaker": "Maria Lopez",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 63,
+    "end_ts": 69,
+    "speaker": "Kevin Lopez",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 70,
+    "end_ts": 78,
+    "speaker": "Maria Lopez",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 79,
+    "end_ts": 89,
+    "speaker": "Kevin Lopez",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 90,
+    "end_ts": 99,
+    "speaker": "Maria Lopez",
+    "text": "I can't hear you, say that again."
+   },
+   {
+    "start_ts": 100,
+    "end_ts": 104,
+    "speaker": "Kevin Lopez",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 105,
+    "end_ts": 125,
+    "speaker": "Maria Lopez",
+    "text": "It's raining like crazy out here."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-039",
+  "date": "2019-02-09",
+  "facility": "Merritt County Jail",
+  "inmate": "Kevin Lopez",
+  "participants": [
+   "Kevin Lopez",
+   "Luis Ortega"
+  ],
+  "duration": 247,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 15,
+    "speaker": "Kevin Lopez",
+    "text": "Word."
+   },
+   {
+    "start_ts": 16,
+    "end_ts": 25,
+    "speaker": "Luis Ortega",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 26,
+    "end_ts": 34,
+    "speaker": "Kevin Lopez",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 35,
+    "end_ts": 38,
+    "speaker": "Luis Ortega",
+    "text": "Everybody at church said they praying for you."
+   },
+   {
+    "start_ts": 39,
+    "end_ts": 48,
+    "speaker": "Kevin Lopez",
+    "text": "Tell the kids I said hi, tell them I love them."
+   },
+   {
+    "start_ts": 49,
+    "end_ts": 55,
+    "speaker": "Luis Ortega",
+    "text": "Don't start with me today."
+   },
+   {
+    "start_ts": 56,
+    "end_ts": 66,
+    "speaker": "Kevin Lopez",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 67,
+    "end_ts": 74,
+    "speaker": "Luis Ortega",
+    "text": "I got the paperwork, I'm gonna mail it."
+   },
+   {
+    "start_ts": 75,
+    "end_ts": 78,
+    "speaker": "Kevin Lopez",
+    "text": "Did the letter come yet? I sent it Monday."
+   },
+   {
+    "start_ts": 79,
+    "end_ts": 84,
+    "speaker": "Luis Ortega",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 85,
+    "end_ts": 92,
+    "speaker": "Kevin Lopez",
+    "text": "My lawyer said the court date got pushed to next month."
+   },
+   {
+    "start_ts": 93,
+    "end_ts": 96,
+    "speaker": "Luis Ortega",
+    "text": "[crosstalk]"
+   },
+   {
+    "start_ts": 97,
+    "end_ts": 101,
+    "speaker": "Kevin Lopez",
+    "text": "They moved my cellie out, new dude snores like crazy."
+   },
+   {
+    "start_ts": 102,
+    "end_ts": 105,
+    "speaker": "Luis Ortega",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 106,
+    "end_ts": 117,
+    "speaker": "Kevin Lopez",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 118,
+    "end_ts": 125,
+    "speaker": "Luis Ortega",
+    "text": "It's raining like crazy out here."
+   },
+   {
+    "start_ts": 126,
+    "end_ts": 132,
+    "speaker": "Kevin Lopez",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 133,
+    "end_ts": 138,
+    "speaker": "Luis Ortega",
+    "text": "Okay."
+   },
+   {
+    "start_ts": 139,
+    "end_ts": 143,
+    "speaker": "Kevin Lopez",
+    "text": "Facts, facts."
+   },
+   {
+    "start_ts": 144,
+    "end_ts": 153,
+    "speaker": "Luis Ortega",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 154,
+    "end_ts": 158,
+    "speaker": "Kevin Lopez",
+    "text": "Commissary out of noodles again, can you believe that."
+   },
+   {
+    "start_ts": 159,
+    "end_ts": 165,
+    "speaker": "Luis Ortega",
+    "text": "Your auntie said she gonna write you."
+   },
+   {
+    "start_ts": 166,
+    "end_ts": 177,
+    "speaker": "Kevin Lopez",
+    "text": "They got us on lockdown again, nobody moving till Thursday."
+   },
+   {
+    "start_ts": 178,
+    "end_ts": 247,
+    "speaker": "Luis Ortega",
+    "text": "Your auntie said she gonna write you."
+   }
+  ]
+ },
+ {
+  "call_id": "CALL-040",
+  "date": "2019-02-20",
+  "facility": "Merritt County Jail",
+  "inmate": "Kevin Lopez",
+  "participants": [
+   "Kevin Lopez",
+   "Maria Lopez"
+  ],
+  "duration": 135,
+  "lines": [
+   {
+    "start_ts": 0,
+    "end_ts": 5,
+    "speaker": "SYSTEM",
+    "text": "This call is from an inmate at Merritt County Jail and is subject to monitoring and recording."
+   },
+   {
+    "start_ts": 6,
+    "end_ts": 12,
+    "speaker": "Kevin Lopez",
+    "text": "The food in here is terrible, it's the same thing every day."
+   },
+   {
+    "start_ts": 13,
+    "end_ts": 24,
+    "speaker": "Maria Lopez",
+    "text": "Boy, stop."
+   },
+   {
+    "start_ts": 25,
+    "end_ts": 31,
+    "speaker": "Kevin Lopez",
+    "text": "These phones cut off after fifteen minutes, so listen."
+   },
+   {
+    "start_ts": 32,
+    "end_ts": 42,
+    "speaker": "Maria Lopez",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 43,
+    "end_ts": 46,
+    "speaker": "Kevin Lopez",
+    "text": "You seen the game Sunday? They got blown out."
+   },
+   {
+    "start_ts": 47,
+    "end_ts": 51,
+    "speaker": "Maria Lopez",
+    "text": "Yeah."
+   },
+   {
+    "start_ts": 52,
+    "end_ts": 63,
+    "speaker": "Kevin Lopez",
+    "text": "It's loud in here, I can barely hear you."
+   },
+   {
+    "start_ts": 64,
+    "end_ts": 67,
+    "speaker": "Maria Lopez",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 68,
+    "end_ts": 78,
+    "speaker": "Kevin Lopez",
+    "text": "Nah, for real."
+   },
+   {
+    "start_ts": 79,
+    "end_ts": 89,
+    "speaker": "Maria Lopez",
+    "text": "[inaudible] the bus was late again."
+   },
+   {
+    "start_ts": 90,
+    "end_ts": 95,
+    "speaker": "Kevin Lopez",
+    "text": "[inaudible] said they gonna move me to C block."
+   },
+   {
+    "start_ts": 96,
+    "end_ts": 106,
+    "speaker": "Maria Lopez",
+    "text": "You eating okay in there?"
+   },
+   {
+    "start_ts": 107,
+    "end_ts": 135,
+    "speaker": "Kevin Lopez",
+    "text": "My lawyer said the court date got pushed to next month."
+   }
+  ]
+ }
+]

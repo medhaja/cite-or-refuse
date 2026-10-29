@@ -1,0 +1,872 @@
+{
+  "mode": "mock",
+  "judge": "lexical",
+  "k": 5,
+  "questions": 30,
+  "claims_drafted": 47,
+  "claims_shown": 47,
+  "metrics": {
+    "recall_at_5": 1.0,
+    "citation_precision": 0.6809,
+    "evidence_coverage": 0.94,
+    "quote_fidelity": 1.0,
+    "raw_quote_fidelity": 1.0,
+    "unanswerable_refusal_rate": 1.0,
+    "false_refusal_rate": 0.0
+  },
+  "fault_injection": null,
+  "per_question": [
+    {
+      "qid": "Q01",
+      "question": "What did Andre tell Rico to do with the green car?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-03 p.1 L6-9",
+        "DOC-09 p.1 L3-6",
+        "CALL-018 @ 00:23-00:57",
+        "CALL-017 @ 01:14-01:46",
+        "DOC-03 p.1 L3-6"
+      ],
+      "shown": [
+        "CALL-018 @ 00:39-00:45",
+        "CALL-017 @ 01:27-01:34",
+        "DOC-09 p.1 L5"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q02",
+      "question": "Who did Tasha say had the gold watch?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-02 p.1 L9-10",
+        "CALL-008 @ 00:45-01:19",
+        "CALL-008 @ 01:11-01:43",
+        "DOC-02 p.1 L6-9",
+        "DOC-01 p.2 L3-6"
+      ],
+      "shown": [
+        "CALL-008 @ 01:11-01:19"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": []
+    },
+    {
+      "qid": "Q03",
+      "question": "What time did dispatch receive the 911 call?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-01 p.1 L3-6",
+        "DOC-01 p.1 L6-9",
+        "CALL-018 @ 00:23-00:57",
+        "DOC-10 p.1 L6-7",
+        "CALL-018 @ 00:46-01:27"
+      ],
+      "shown": [
+        "DOC-01 p.1 L6"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": []
+    },
+    {
+      "qid": "Q04",
+      "question": "How much cash was taken from the register?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-02 p.1 L6-9",
+        "DOC-01 p.2 L3-6",
+        "DOC-09 p.1 L3-6",
+        "DOC-05 p.1 L9-12",
+        "DOC-10 p.1 L3-6"
+      ],
+      "shown": [
+        "DOC-02 p.1 L8",
+        "DOC-01 p.2 L4"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q05",
+      "question": "What did Gloria Fenn see pull out of the lot?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-03 p.1 L6-9",
+        "DOC-03 p.1 L3-6",
+        "DOC-03 p.1 L9-11",
+        "DOC-10 p.1 L3-6",
+        "DOC-06 p.2 L3-6"
+      ],
+      "shown": [
+        "DOC-03 p.1 L6",
+        "DOC-03 p.1 L9"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q06",
+      "question": "What vehicle did Paul Ortiz describe?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-04 p.1 L9-10",
+        "DOC-04 p.1 L3-6",
+        "DOC-04 p.1 L6-9",
+        "DOC-09 p.1 L6-7",
+        "DOC-09 p.1 L3-6"
+      ],
+      "shown": [
+        "DOC-04 p.1 L5"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "shown claims miss part of the gold evidence",
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q07",
+      "question": "What caliber was the shell casing?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-01 p.2 L6-9",
+        "DOC-05 p.1 L9-12",
+        "DOC-13 p.1 L3-6"
+      ],
+      "shown": [
+        "DOC-01 p.2 L8",
+        "DOC-05 p.1 L11",
+        "DOC-13 p.1 L5"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q08",
+      "question": "Where was the red baseball cap found?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-01 p.2 L6-9",
+        "DOC-05 p.1 L6-9",
+        "DOC-13 p.1 L3-6",
+        "DOC-08 p.1 L3-6",
+        "CALL-012 @ 00:36-01:04"
+      ],
+      "shown": [
+        "DOC-05 p.1 L8",
+        "DOC-01 p.2 L7",
+        "DOC-13 p.1 L3"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q09",
+      "question": "Did the lab get a DNA profile from the red cap?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-13 p.1 L3-6",
+        "DOC-01 p.2 L6-9",
+        "DOC-05 p.1 L6-9",
+        "DOC-08 p.1 L3-6",
+        "DOC-13 p.1 L6-7"
+      ],
+      "shown": [
+        "DOC-13 p.1 L3"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": []
+    },
+    {
+      "qid": "Q10",
+      "question": "What did Andre say about where he was that night?",
+      "category": "answerable",
+      "retrieved": [
+        "CALL-005 @ 00:26-00:54",
+        "CALL-020 @ 01:34-02:09",
+        "CALL-020 @ 02:01-02:33",
+        "DOC-11 p.1 L3-6",
+        "DOC-02 p.1 L3-6"
+      ],
+      "shown": [
+        "CALL-005 @ 00:35-00:44",
+        "CALL-020 @ 02:01-02:09",
+        "DOC-11 p.1 L6"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "2 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q11",
+      "question": "What did Kevin say on the calls about being there that night?",
+      "category": "answerable",
+      "retrieved": [
+        "CALL-031 @ 03:25-03:54",
+        "CALL-005 @ 00:26-00:54",
+        "CALL-020 @ 01:34-02:09",
+        "CALL-020 @ 02:01-02:33",
+        "CALL-033 @ 01:59-02:32"
+      ],
+      "shown": [
+        "CALL-031 @ 03:45-03:49"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": []
+    },
+    {
+      "qid": "Q12",
+      "question": "What did Andre say about the red hat?",
+      "category": "answerable",
+      "retrieved": [
+        "CALL-012 @ 00:36-01:04",
+        "CALL-012 @ 00:06-00:42",
+        "DOC-01 p.2 L6-9",
+        "DOC-05 p.1 L6-9",
+        "DOC-08 p.1 L3-6"
+      ],
+      "shown": [
+        "CALL-012 @ 00:43-00:54"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": []
+    },
+    {
+      "qid": "Q13",
+      "question": "What did Loretta Whitfield say about that night?",
+      "category": "answerable",
+      "retrieved": [
+        "CALL-020 @ 01:34-02:09",
+        "CALL-020 @ 02:01-02:33",
+        "DOC-11 p.1 L6-7",
+        "CALL-013 @ 00:06-00:43",
+        "CALL-023 @ 00:06-00:43"
+      ],
+      "shown": [
+        "CALL-020 @ 02:01-02:09"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": []
+    },
+    {
+      "qid": "Q14",
+      "question": "What did Kevin say about the watch at Lucky's?",
+      "category": "answerable",
+      "retrieved": [
+        "CALL-033 @ 01:59-02:32",
+        "DOC-14 p.1 L6-7",
+        "DOC-14 p.1 L3-6",
+        "CALL-008 @ 00:45-01:19",
+        "CALL-008 @ 01:11-01:43"
+      ],
+      "shown": [
+        "CALL-033 @ 02:08-02:13",
+        "CALL-008 @ 01:11-01:19"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q15",
+      "question": "What did Andre tell Tasha to do if detectives come by?",
+      "category": "answerable",
+      "retrieved": [
+        "CALL-010 @ 02:37-03:02",
+        "DOC-06 p.1 L6-7",
+        "DOC-06 p.1 L3-6",
+        "CALL-005 @ 02:10-02:59",
+        "CALL-009 @ 01:55-02:28"
+      ],
+      "shown": [
+        "CALL-010 @ 02:43-02:51"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": []
+    },
+    {
+      "qid": "Q16",
+      "question": "Who was the green Honda Accord registered to?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-09 p.1 L3-6",
+        "DOC-09 p.1 L6-7",
+        "DOC-03 p.1 L6-9",
+        "DOC-05 p.1 L9-12",
+        "CALL-018 @ 00:23-00:57"
+      ],
+      "shown": [
+        "DOC-09 p.1 L5"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": []
+    },
+    {
+      "qid": "Q17",
+      "question": "Where did Darnell Bell say he was all night?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-07 p.1 L3-6",
+        "DOC-07 p.1 L6-8",
+        "DOC-02 p.1 L3-6",
+        "DOC-01 p.1 L9-12",
+        "DOC-01 p.1 L6-9"
+      ],
+      "shown": [
+        "DOC-07 p.1 L4"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": []
+    },
+    {
+      "qid": "Q18",
+      "question": "Why was the rear camera not recording?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-08 p.1 L6-8",
+        "DOC-08 p.1 L3-6",
+        "DOC-14 p.1 L3-6",
+        "DOC-06 p.2 L3-6",
+        "DOC-14 p.1 L6-7"
+      ],
+      "shown": [
+        "DOC-08 p.1 L7",
+        "DOC-08 p.1 L3"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q19",
+      "question": "When was the case reassigned for cold case review?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-06 p.1 L3-6",
+        "DOC-06 p.1 L6-7",
+        "DOC-06 p.2 L3-6",
+        "DOC-05 p.2 L3-6"
+      ],
+      "shown": [
+        "DOC-06 p.1 L3"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": []
+    },
+    {
+      "qid": "Q20",
+      "question": "What was the loan amount for the pawned watch?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-14 p.1 L3-6",
+        "DOC-14 p.1 L6-7",
+        "DOC-15 p.1 L3-6",
+        "CALL-033 @ 01:59-02:32",
+        "DOC-06 p.2 L3-6"
+      ],
+      "shown": [
+        "DOC-14 p.1 L5"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": []
+    },
+    {
+      "qid": "Q21",
+      "question": "Where did Andre say he was that night, and what did Loretta say about that night?",
+      "category": "multi_source",
+      "retrieved": [
+        "CALL-020 @ 01:34-02:09",
+        "CALL-020 @ 02:01-02:33",
+        "DOC-02 p.1 L3-6",
+        "DOC-11 p.1 L6-7",
+        "CALL-005 @ 00:26-00:54"
+      ],
+      "shown": [
+        "CALL-005 @ 00:35-00:44",
+        "CALL-020 @ 02:01-02:09"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": []
+    },
+    {
+      "qid": "Q22",
+      "question": "What color was the vehicle according to the witness statements?",
+      "category": "multi_source",
+      "retrieved": [
+        "DOC-04 p.1 L6-9",
+        "DOC-03 p.1 L6-9",
+        "DOC-04 p.1 L3-6",
+        "DOC-09 p.1 L6-7",
+        "DOC-09 p.1 L3-6"
+      ],
+      "shown": [
+        "DOC-04 p.1 L7",
+        "DOC-03 p.1 L7",
+        "DOC-04 p.1 L5"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q23",
+      "question": "Who pawned the gold watch, and what did Kevin say about the watch?",
+      "category": "multi_source",
+      "retrieved": [
+        "DOC-14 p.1 L3-6",
+        "DOC-14 p.1 L6-7",
+        "DOC-02 p.1 L9-10",
+        "DOC-15 p.1 L3-6",
+        "CALL-033 @ 01:59-02:32"
+      ],
+      "shown": [
+        "DOC-02 p.1 L9",
+        "DOC-14 p.1 L4",
+        "DOC-15 p.1 L5",
+        "CALL-033 @ 02:08-02:13"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "2 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q24",
+      "question": "What date is recorded in the incident report, and what date is in the evidence log?",
+      "category": "multi_source",
+      "retrieved": [
+        "DOC-01 p.2 L9-10",
+        "DOC-05 p.1 L3-6",
+        "DOC-01 p.1 L3-6",
+        "DOC-05 p.2 L3-6",
+        "DOC-05 p.1 L6-9"
+      ],
+      "shown": [
+        "DOC-01 p.1 L5",
+        "DOC-05 p.1 L4"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": []
+    },
+    {
+      "qid": "Q25",
+      "question": "Who was the green car registered to, and what did Andre tell Rico to do with it?",
+      "category": "multi_source",
+      "retrieved": [
+        "DOC-09 p.1 L3-6",
+        "DOC-03 p.1 L6-9",
+        "CALL-018 @ 00:23-00:57",
+        "CALL-017 @ 01:14-01:46",
+        "DOC-03 p.1 L3-6"
+      ],
+      "shown": [
+        "DOC-03 p.1 L6",
+        "DOC-03 p.1 L7",
+        "CALL-018 @ 00:39-00:45",
+        "CALL-017 @ 01:27-01:34"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "shown claims miss part of the gold evidence",
+        "2 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q26",
+      "question": "What did the victim's brother say on the jail calls?",
+      "category": "unanswerable",
+      "retrieved": [
+        "CALL-010 @ 02:37-03:02",
+        "CALL-013 @ 00:06-00:43",
+        "CALL-023 @ 00:06-00:43",
+        "CALL-023 @ 00:37-01:15",
+        "CALL-031 @ 03:25-03:54"
+      ],
+      "shown": [],
+      "refused": [],
+      "issues": []
+    },
+    {
+      "qid": "Q27",
+      "question": "What was the license plate of the green car?",
+      "category": "unanswerable",
+      "retrieved": [
+        "DOC-03 p.1 L6-9",
+        "DOC-03 p.1 L3-6",
+        "DOC-03 p.1 L9-11",
+        "DOC-09 p.1 L3-6",
+        "CALL-018 @ 00:23-00:57"
+      ],
+      "shown": [],
+      "refused": [],
+      "issues": []
+    },
+    {
+      "qid": "Q28",
+      "question": "Who was the getaway driver?",
+      "category": "unanswerable",
+      "retrieved": [],
+      "shown": [],
+      "refused": [],
+      "issues": []
+    },
+    {
+      "qid": "Q29",
+      "question": "What did Tasha say about the shell casing?",
+      "category": "unanswerable",
+      "retrieved": [
+        "DOC-01 p.2 L6-9",
+        "DOC-05 p.1 L9-12",
+        "DOC-13 p.1 L3-6",
+        "CALL-010 @ 02:16-02:42",
+        "CALL-010 @ 02:37-03:02"
+      ],
+      "shown": [],
+      "refused": [],
+      "issues": []
+    },
+    {
+      "qid": "Q30",
+      "question": "What did the security guard see?",
+      "category": "unanswerable",
+      "retrieved": [
+        "DOC-06 p.2 L3-6",
+        "DOC-04 p.1 L9-10",
+        "DOC-03 p.1 L9-11",
+        "DOC-01 p.2 L9-10",
+        "DOC-04 p.1 L6-9"
+      ],
+      "shown": [],
+      "refused": [],
+      "issues": []
+    }
+  ],
+  "failures": [
+    {
+      "qid": "Q01",
+      "question": "What did Andre tell Rico to do with the green car?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-03 p.1 L6-9",
+        "DOC-09 p.1 L3-6",
+        "CALL-018 @ 00:23-00:57",
+        "CALL-017 @ 01:14-01:46",
+        "DOC-03 p.1 L3-6"
+      ],
+      "shown": [
+        "CALL-018 @ 00:39-00:45",
+        "CALL-017 @ 01:27-01:34",
+        "DOC-09 p.1 L5"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q04",
+      "question": "How much cash was taken from the register?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-02 p.1 L6-9",
+        "DOC-01 p.2 L3-6",
+        "DOC-09 p.1 L3-6",
+        "DOC-05 p.1 L9-12",
+        "DOC-10 p.1 L3-6"
+      ],
+      "shown": [
+        "DOC-02 p.1 L8",
+        "DOC-01 p.2 L4"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q05",
+      "question": "What did Gloria Fenn see pull out of the lot?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-03 p.1 L6-9",
+        "DOC-03 p.1 L3-6",
+        "DOC-03 p.1 L9-11",
+        "DOC-10 p.1 L3-6",
+        "DOC-06 p.2 L3-6"
+      ],
+      "shown": [
+        "DOC-03 p.1 L6",
+        "DOC-03 p.1 L9"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q06",
+      "question": "What vehicle did Paul Ortiz describe?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-04 p.1 L9-10",
+        "DOC-04 p.1 L3-6",
+        "DOC-04 p.1 L6-9",
+        "DOC-09 p.1 L6-7",
+        "DOC-09 p.1 L3-6"
+      ],
+      "shown": [
+        "DOC-04 p.1 L5"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "shown claims miss part of the gold evidence",
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q07",
+      "question": "What caliber was the shell casing?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-01 p.2 L6-9",
+        "DOC-05 p.1 L9-12",
+        "DOC-13 p.1 L3-6"
+      ],
+      "shown": [
+        "DOC-01 p.2 L8",
+        "DOC-05 p.1 L11",
+        "DOC-13 p.1 L5"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q08",
+      "question": "Where was the red baseball cap found?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-01 p.2 L6-9",
+        "DOC-05 p.1 L6-9",
+        "DOC-13 p.1 L3-6",
+        "DOC-08 p.1 L3-6",
+        "CALL-012 @ 00:36-01:04"
+      ],
+      "shown": [
+        "DOC-05 p.1 L8",
+        "DOC-01 p.2 L7",
+        "DOC-13 p.1 L3"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q10",
+      "question": "What did Andre say about where he was that night?",
+      "category": "answerable",
+      "retrieved": [
+        "CALL-005 @ 00:26-00:54",
+        "CALL-020 @ 01:34-02:09",
+        "CALL-020 @ 02:01-02:33",
+        "DOC-11 p.1 L3-6",
+        "DOC-02 p.1 L3-6"
+      ],
+      "shown": [
+        "CALL-005 @ 00:35-00:44",
+        "CALL-020 @ 02:01-02:09",
+        "DOC-11 p.1 L6"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "2 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q14",
+      "question": "What did Kevin say about the watch at Lucky's?",
+      "category": "answerable",
+      "retrieved": [
+        "CALL-033 @ 01:59-02:32",
+        "DOC-14 p.1 L6-7",
+        "DOC-14 p.1 L3-6",
+        "CALL-008 @ 00:45-01:19",
+        "CALL-008 @ 01:11-01:43"
+      ],
+      "shown": [
+        "CALL-033 @ 02:08-02:13",
+        "CALL-008 @ 01:11-01:19"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q18",
+      "question": "Why was the rear camera not recording?",
+      "category": "answerable",
+      "retrieved": [
+        "DOC-08 p.1 L6-8",
+        "DOC-08 p.1 L3-6",
+        "DOC-14 p.1 L3-6",
+        "DOC-06 p.2 L3-6",
+        "DOC-14 p.1 L6-7"
+      ],
+      "shown": [
+        "DOC-08 p.1 L7",
+        "DOC-08 p.1 L3"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q22",
+      "question": "What color was the vehicle according to the witness statements?",
+      "category": "multi_source",
+      "retrieved": [
+        "DOC-04 p.1 L6-9",
+        "DOC-03 p.1 L6-9",
+        "DOC-04 p.1 L3-6",
+        "DOC-09 p.1 L6-7",
+        "DOC-09 p.1 L3-6"
+      ],
+      "shown": [
+        "DOC-04 p.1 L7",
+        "DOC-03 p.1 L7",
+        "DOC-04 p.1 L5"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "1 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q23",
+      "question": "Who pawned the gold watch, and what did Kevin say about the watch?",
+      "category": "multi_source",
+      "retrieved": [
+        "DOC-14 p.1 L3-6",
+        "DOC-14 p.1 L6-7",
+        "DOC-02 p.1 L9-10",
+        "DOC-15 p.1 L3-6",
+        "CALL-033 @ 01:59-02:32"
+      ],
+      "shown": [
+        "DOC-02 p.1 L9",
+        "DOC-14 p.1 L4",
+        "DOC-15 p.1 L5",
+        "CALL-033 @ 02:08-02:13"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "2 shown claim(s) cite non-gold spans"
+      ]
+    },
+    {
+      "qid": "Q25",
+      "question": "Who was the green car registered to, and what did Andre tell Rico to do with it?",
+      "category": "multi_source",
+      "retrieved": [
+        "DOC-09 p.1 L3-6",
+        "DOC-03 p.1 L6-9",
+        "CALL-018 @ 00:23-00:57",
+        "CALL-017 @ 01:14-01:46",
+        "DOC-03 p.1 L3-6"
+      ],
+      "shown": [
+        "DOC-03 p.1 L6",
+        "DOC-03 p.1 L7",
+        "CALL-018 @ 00:39-00:45",
+        "CALL-017 @ 01:27-01:34"
+      ],
+      "refused": [],
+      "recall_at_5": 1.0,
+      "issues": [
+        "shown claims miss part of the gold evidence",
+        "2 shown claim(s) cite non-gold spans"
+      ]
+    }
+  ],
+  "targets": {
+    "recall_at_5": {
+      "op": ">=",
+      "target": 0.85,
+      "value": 1.0,
+      "pass": true
+    },
+    "quote_fidelity": {
+      "op": "==",
+      "target": 1.0,
+      "value": 1.0,
+      "pass": true
+    },
+    "unanswerable_refusal_rate": {
+      "op": ">=",
+      "target": 0.8,
+      "value": 1.0,
+      "pass": true
+    },
+    "false_refusal_rate": {
+      "op": "<=",
+      "target": 0.15,
+      "value": 0.0,
+      "pass": true
+    }
+  }
+}

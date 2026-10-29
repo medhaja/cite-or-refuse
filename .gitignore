@@ -24,3 +24,9 @@ Thumbs.db
 
 # Request log written by the demo server
 runs.jsonl
+
+# Walkthrough video build artifacts
+docs/kt-video/.venv/
+docs/kt-video/audio/
+docs/kt-video/out/
+docs/kt-video/node_modules/

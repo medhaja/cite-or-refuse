@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cite or Refuse: code walkthrough</title>
+<style>
+  /* Colour meaning: blue = request / data in motion, amber = stored state, green = verified, red = refused. */
+  :root {
+    --bg: #0b0e14; --panel: #131823; --panel2: #1a2030; --line: #2a3346;
+    --ink: #e8ecf3; --muted: #8b94a8; --dim: #5d667a;
+    --blue: #5ab0ff; --amber: #f5b754; --green: #46d39a; --red: #ff6b6b;
+    --display: "Bahnschrift", "Segoe UI Semibold", "Segoe UI", sans-serif;
+    --body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --mono: "Consolas", "Cascadia Mono", "Courier New", monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #05070a; color: var(--ink); font-family: var(--body); overflow: hidden; }
+  #stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; background: var(--bg);
+           overflow: hidden; transform-origin: 0 0; }
+  .scene { position: absolute; inset: 0; opacity: 0; }
+  .abs { position: absolute; }
+  .chapter { position: absolute; left: 60px; top: 44px; font: 600 20px var(--mono); color: var(--muted);
+             letter-spacing: .04em; }
+  .chapter b { color: var(--ink); font-weight: 600; }
+  .title { position: absolute; left: 120px; top: 92px; font: 600 52px var(--display); letter-spacing: -.01em; }
+  .mono { font-family: var(--mono); }
+  .muted { color: var(--muted); }
+  .panel { position: absolute; background: var(--panel); border: 2px solid var(--line); border-radius: 14px; }
+  .card { position: absolute; background: var(--panel); border: 2px solid var(--line); border-radius: 14px;
+          padding: 22px 26px; }
+  .chip { display: inline-block; font: 600 19px var(--mono); padding: 6px 14px; border-radius: 8px;
+          border: 2px solid var(--line); background: var(--panel2); white-space: nowrap; }
+  .chip.green { color: var(--green); border-color: var(--green); background: rgba(70,211,154,.08); }
+  .chip.red { color: var(--red); border-color: var(--red); background: rgba(255,107,107,.08); }
+  .chip.blue { color: var(--blue); border-color: var(--blue); background: rgba(90,176,255,.08); }
+  .chip.amber { color: var(--amber); border-color: var(--amber); background: rgba(245,183,84,.08); }
+  .label { font: 600 18px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+  .box { position: absolute; background: var(--panel); border: 2px solid var(--line); border-radius: 12px;
+         display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+  .box .n { font: 600 22px var(--mono); }
+  .box .d { font: 16px var(--body); color: var(--muted); margin-top: 8px; padding: 0 10px; }
+  .box .d.mono { font-family: var(--mono); }
+  .arrow { position: absolute; height: 3px; background: var(--dim); transform-origin: 0 50%; }
+  .arrow::after { content: ""; position: absolute; right: -2px; top: -6px; border-left: 12px solid var(--dim);
+                  border-top: 7.5px solid transparent; border-bottom: 7.5px solid transparent; }
+  .arrow.blue { background: var(--blue); } .arrow.blue::after { border-left-color: var(--blue); }
+  .varrow { position: absolute; width: 3px; background: var(--dim); }
+  .varrow::after { content: ""; position: absolute; top: -10px; left: -6px; border-bottom: 12px solid var(--dim);
+                   border-left: 7.5px solid transparent; border-right: 7.5px solid transparent; }
+  .varrow.blue { background: var(--blue); } .varrow.blue::after { border-bottom-color: var(--blue); }
+  .token { position: absolute; width: 22px; height: 22px; border-radius: 50%; background: var(--blue);
+           box-shadow: 0 0 0 6px rgba(90,176,255,.18); }
+  .check { color: var(--green); font-weight: 700; }
+  .q { color: var(--ink); }
+  .hl-quote { background: rgba(70,211,154,.16); border-radius: 4px; padding: 0 3px; }
+  /* code focus */
+  .code { position: absolute; font: 18px/27px var(--mono); }
+  .code .row { position: relative; height: 27px; white-space: pre; }
+  .code .ln { display: inline-block; width: 56px; text-align: right; color: var(--dim); margin-right: 22px; }
+  .code .gap .ln { color: var(--dim); }
+  .code .band { position: absolute; left: -14px; right: -14px; top: 0; height: 27px; background: rgba(90,176,255,.13);
+                border-left: 4px solid var(--blue); opacity: 0; }
+  .kw { color: #c792ea; } .str { color: #c3e88d; } .fn { color: #82aaff; } .cn { color: var(--amber); }
+  /* transcript rows */
+  .trow { position: absolute; left: 0; right: 0; height: 58px; display: flex; align-items: center; font-size: 18px;
+          padding: 0 22px; }
+  .trow .ts { font: 18px var(--mono); color: var(--muted); width: 82px; flex: none; }
+  .trow .sp { width: 120px; flex: none; color: var(--muted); font-size: 17px; }
+  .trow .tx { white-space: nowrap; }
+  .record { font: 21px/36px var(--mono); white-space: pre; }
+  .record .k { color: var(--blue); } .record .v { color: var(--ink); } .record .s { color: #c3e88d; }
+  /* progress */
+  #progress { position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: #121722; }
+  #bar { position: absolute; left: 0; top: 0; bottom: 0; background: var(--blue); opacity: .7; }
+  .tick { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--bg); }
+  /* preview controls (never captured in render mode) */
+  #controls { position: fixed; left: 0; right: 0; bottom: 0; height: 56px; display: flex; gap: 14px;
+              align-items: center; padding: 0 18px; background: #10141c; border-top: 1px solid #222a38;
+              font: 14px var(--mono); color: var(--muted); }
+  #controls button { font: 14px var(--mono); background: #1d2433; color: var(--ink); border: 1px solid #2c3548;
+                     border-radius: 6px; padding: 6px 14px; cursor: pointer; }
+  #controls input[type=range] { flex: 1; }
+  body.render #controls { display: none; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="chapter" id="chapter"></div>
+  <div id="scenes"></div>
+  <div id="progress"><div id="bar"></div></div>
+</div>
+<div id="controls">
+  <button id="play">Play</button>
+  <input type="range" id="scrub" min="0" max="1" step="0.01" value="0">
+  <span id="clock">0:00.0</span>
+</div>
+
+<script>
+"use strict";
+// ---------------------------------------------------------------------------------------------------------
+// Deterministic helpers: every frame is a pure function of t. No CSS transitions, timers or randomness.
+// ---------------------------------------------------------------------------------------------------------
+const clamp = x => Math.max(0, Math.min(1, x));
+const ease = x => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const prog = (t, a, d = .6) => ease((t - a) / d);
+const lerp = (a, b, p) => a + (b - a) * p;
+function put(el, o, x = 0, y = 0, s = 1) {
+  el.style.opacity = o.toFixed(4);
+  el.style.transform = `translate(${x.toFixed(2)}px, ${y.toFixed(2)}px) scale(${s.toFixed(4)})`;
+}
+function appear(el, t, a, d = .6, dy = 14) { const p = prog(t, a, d); put(el, p, 0, (1 - p) * dy); return p; }
+const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+const MISSING = [];
+const norm = s => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+// Local time (s) at which `phrase` starts in this scene's narration, from Kokoro's word timestamps.
+function phraseTime(scene, phrase) {
+  const want = phrase.split(/\s+/).map(norm).filter(Boolean);
+  const words = scene.words.map(w => norm(w.text));
+  for (let i = 0; i + want.length <= words.length; i++) {
+    if (want.every((w, k) => words[i + k] === w)) return scene.words[i].start;
+  }
+  MISSING.push(`${scene.id}: "${phrase}"`);
+  return 0;
+}
+
+// ---------------------------------------------------------------------------------------------------------
+// Scenes. build(root) creates static DOM once; beats(at) resolves phrase times; render(t, b) sets styles.
+// ---------------------------------------------------------------------------------------------------------
+const SCENES = {};
+
+SCENES["01"] = {
+  build: r => r.innerHTML = `
+    <div class="abs" data-k="h1" style="left:120px;top:150px;font:600 104px var(--display);letter-spacing:-.02em">Cite or Refuse</div>
+    <div class="abs muted" data-k="sub" style="left:124px;top:282px;font:30px var(--body)">Every claim traces to the record, or it's refused.</div>
+    <div class="abs" data-k="pitch" style="left:120px;top:370px;display:flex;align-items:center;gap:22px">
+      <span class="chip blue">AI finds</span>
+      <span style="width:70px;height:3px;background:var(--blue);position:relative;display:inline-block"></span>
+      <span class="chip">people check</span>
+      <span style="width:70px;height:3px;background:var(--dim);display:inline-block"></span>
+      <span class="chip">survives court</span>
+    </div>
+    <div class="abs" data-k="foot" style="left:122px;top:436px;font:18px var(--body);color:var(--dim)">Public coverage: Comstock's · Axios · New Times SLO · Inc.</div>
+    <div class="abs label" data-k="shownH" style="left:120px;top:530px;color:var(--green)">Shown</div>
+    <div class="abs label" data-k="refH" style="left:1080px;top:530px;color:var(--red)">Refused</div>
+    <div class="abs" style="left:1040px;top:530px;width:2px;height:330px;background:var(--line)" data-k="divider"></div>
+    <div class="card" data-k="good" style="left:120px;top:580px;width:860px">
+      <div style="font-size:24px;line-height:1.4">Andre Whitfield said: <span class="q">"Tell Rico get rid of the green one, take it out past the quarry in Dunmore."</span></div>
+      <div style="margin-top:18px"><span class="chip green" data-k="chip">CALL-017 @ 01:27-01:34</span></div>
+    </div>
+    <div class="card" data-k="bad" style="left:120px;top:580px;width:680px">
+      <div class="muted label" style="font-size:15px;margin-bottom:10px">drafted claim</div>
+      <div style="font-size:24px;line-height:1.4">Andre said: "I drove the green car that night."</div>
+      <div style="margin-top:18px;display:flex;gap:14px;align-items:center"><span class="chip">CALL-017 @ 01:27-01:34</span>
+        <span class="chip red" data-k="reason">quote_not_found</span></div>
+    </div>
+    <div class="abs" data-k="synth" style="left:120px;top:940px"><span class="chip amber">synthetic data · offline eval</span></div>`,
+  beats: at => ({ pitch: at("the AI finds"), check: at("people check"), invented: at("one invented quote"),
+                  rule: at("one rule"), link: at("links to an exact line"), refused: at("refused, and you see why"),
+                  synth: at("synthetic data") }),
+  render(t, b, k) {
+    appear(k.h1, t, 0, .8, 20); appear(k.sub, t, .4, .8);
+    appear(k.pitch, t, b.pitch); appear(k.foot, t, b.check);
+    const pBad = prog(t, b.invented);
+    const pGood = prog(t, b.link);
+    const pRef = prog(t, b.refused, .9);
+    for (const el of [k.shownH, k.refH, k.divider]) appear(el, t, b.invented, .6, 0);
+    // The invented claim sits in "Shown" until the verifier refuses it, then slides across.
+    put(k.bad, pBad, lerp(0, 960, pRef), lerp(16 * (1 - pBad), 0, pBad) + lerp(0, 0, pRef));
+    k.bad.style.borderColor = pRef > .5 ? "var(--red)" : "var(--line)";
+    k.reason.style.opacity = prog(t, b.refused + .6, .4);
+    // The real claim appears below while the invented one is still in place, then moves up.
+    put(k.good, pGood, 0, lerp(250, 0, pRef) + (1 - pGood) * 16);
+    k.chip.style.opacity = prog(t, b.link + .5, .4);
+    k.good.style.borderColor = prog(t, b.link + .5, .4) > .5 ? "var(--green)" : "var(--line)";
+    appear(k.synth, t, b.synth);
+  },
+};
+
+SCENES["02"] = (() => {
+  const BOX = [["generator", "seeded, fictional case", "amber"], ["chunker", "windows + citation metadata"],
+               ["BM25 retriever", "top 5 chunks"], ["answerer", "quoted claims"], ["verifier", "plain code"],
+               ["FastAPI", "/ask · /source · /eval"], ["static page", "Ask · Source · Eval"]];
+  const X = i => 120 + i * 246, Y = 430, W = 205, H = 130;
+  return {
+    build: r => r.innerHTML = BOX.map(([n, d, c], i) => `
+        <div class="box" data-k="b${i}" style="left:${X(i)}px;top:${Y}px;width:${W}px;height:${H}px;${c ? `border-color:var(--${c})` : ""}">
+          <div class="n" ${c ? `style="color:var(--${c})"` : ""}>${n}</div><div class="d">${d}</div></div>
+        ${i < BOX.length - 1 ? `<div class="arrow" data-k="a${i}" style="left:${X(i) + W + 4}px;top:${Y + H / 2 - 1}px;width:33px"></div>` : ""}`).join("") + `
+      <div class="abs" data-k="tagA" style="left:${X(3) - 20}px;top:${Y - 52}px;width:${W + 40}px;text-align:center">
+        <span class="chip" style="font-size:15px">mock · LLM optional</span></div>
+      <div class="abs" data-k="pipe" style="left:${X(2) - 18}px;top:${Y - 70}px;width:${X(4) + W - X(2) + 36}px;height:${H + 140}px;border:2px dashed var(--blue);border-radius:18px"></div>
+      <div class="abs mono" data-k="pipeL" style="left:${X(2)}px;top:${Y + H + 34}px;font-size:19px;color:var(--blue)">Pipeline · pipeline.py</div>
+      <div class="box" data-k="ev" style="left:${X(3) - 60}px;top:810px;width:${W + 120}px;height:110px">
+        <div class="n">eval runner</div><div class="d mono" style="font-size:15px">eval.py → run_eval()</div></div>
+      <div class="varrow blue" data-k="evA" style="left:${X(3) + W / 2 - 1}px;top:${Y + H + 72}px;height:${810 - (Y + H + 72) - 4}px"></div>
+      <div class="abs" data-k="same" style="left:${X(4) + 130}px;top:842px;font-size:26px">same code path → <span style="color:var(--green)">you measure what users see</span></div>
+      <div class="token" data-k="tok"></div>
+      <div class="token" data-k="tok2"></div>`,
+    beats: at => ({ times: [at("seeded generator"), at("chunker splits"), at("B M"), at("answerer drafts"),
+                            at("verifier checks"), at("Fast A-P-I"), at("static page")],
+                    eval: at("the eval calls"), measure: at("measure what") }),
+    render(t, b, k) {
+      b.times.forEach((ti, i) => {
+        appear(k["b" + i], t, ti, .6, 12);
+        if (k["a" + i]) { const p = prog(t, b.times[i + 1] - .45, .45); k["a" + i].style.opacity = p;
+          k["a" + i].style.transform = `scaleX(${p.toFixed(4)})`; k["a" + i].className = "arrow" + (p > 0 && p < 1 ? " blue" : ""); }
+      });
+      appear(k.tagA, t, b.times[3] + .5);
+      k.b4.style.borderColor = prog(t, b.times[4] + .4, .4) > .5 ? "var(--green)" : "var(--line)";
+      // A request token hops from box to box as each one is named.
+      let seg = 0; while (seg < b.times.length - 1 && t >= b.times[seg + 1]) seg++;
+      const p = seg < b.times.length - 1 ? prog(t, b.times[seg + 1] - .45, .45) : 0;
+      const cx = i => X(i) + W / 2 - 11;
+      put(k.tok, prog(t, b.times[0], .4) * (1 - prog(t, b.eval, .5)), lerp(cx(seg), cx(Math.min(seg + 1, 6)), p), Y - 34);
+      appear(k.pipe, t, b.eval, .7, 0); appear(k.pipeL, t, b.eval, .7, 0); appear(k.ev, t, b.eval + .2);
+      const pa = prog(t, b.eval + .6, .5);
+      k.evA.style.opacity = pa; k.evA.style.transform = `scaleY(${pa.toFixed(4)})`; k.evA.style.transformOrigin = "50% 100%";
+      const pt = prog(t, b.eval + 1.1, 1.0);
+      put(k.tok2, pt > 0 ? 1 - prog(t, b.eval + 2.6, .4) : 0, X(3) + W / 2 - 11, lerp(800, Y + H + 40, pt));
+      appear(k.same, t, b.measure);
+    },
+  };
+})();
+
+SCENES["03"] = (() => {
+  // Real lines from data/calls.json, CALL-017 (units 6-13).
+  const LINES = [["00:47", "Andre W.", "These phones cut off after fifteen minutes, so listen."],
+                 ["00:55", "Tasha G.", "You sound tired."],
+                 ["01:07", "Andre W.", "These phones cut off after fifteen minutes, so listen."],
+                 ["01:14", "Tasha G.", "Everybody at church said they praying for you."],
+                 ["01:19", "Andre W.", "My knee been hurting since I fell on the stairs."],
+                 ["01:27", "Andre W.", "Tell Rico get rid of the green one, take it out past the quarry in Dunmore."],
+                 ["01:35", "Tasha G.", "Why you keep bringing that up?"],
+                 ["01:47", "Andre W.", "Just tell him, it's been sitting at his cousin's too long."]];
+  const RY = i => 78 + i * 62;
+  const REC = [["source_type", '"call"'], ["source_id", '"CALL-017"'], ["start_ts", "74"], ["end_ts", "106"],
+               ["speaker", '"Tasha Greene, Andre Whitfield"'], ["text", '"Everybody at church said…"']];
+  return {
+    build: r => r.innerHTML = `
+      <div class="panel" data-k="tp" style="left:120px;top:200px;width:960px;height:600px">
+        <div class="abs mono" style="left:22px;top:22px;font-size:19px;color:var(--amber)">CALL-017 · data/calls.json</div>
+        ${LINES.map(([ts, sp, tx], i) => `<div class="trow" style="top:${RY(i)}px"><span class="ts">${ts}</span><span class="sp">${sp}</span><span class="tx">${esc(tx)}</span></div>`).join("")}
+        <div class="abs" data-k="win" style="left:8px;right:8px;top:${RY(0) - 3}px;height:${62 * 4 - 2}px;border:3px solid var(--blue);border-radius:10px;background:rgba(90,176,255,.06)">
+          <div class="abs mono" style="right:10px;top:-34px;font-size:16px;color:var(--blue)">window 4 · stride 3</div></div>
+      </div>
+      <div class="panel" data-k="rp" style="left:1130px;top:200px;width:670px;height:600px;padding:26px 30px">
+        <div class="mono muted" style="font-size:17px;margin-bottom:12px">chunk record · corpus.py:109-121</div>
+        <div class="record">{${REC.map(([kk, v], i) => `<div data-k="f${i}">  <span class="k">"${kk}"</span>: <span class="${v.startsWith('"') ? "s" : "v"}">${esc(v)}</span>,</div>`).join("")}}</div>
+        <div class="record" data-k="doc" style="margin-top:20px;font-size:18px;line-height:30px;color:var(--muted)">document chunks instead carry
+  <span class="k">"page"</span>: 1, <span class="k">"line_start"</span>: 3, <span class="k">"line_end"</span>: 6</div>
+      </div>
+      <div class="abs" data-k="lab" style="left:1130px;top:840px;display:flex;align-items:center;gap:18px">
+        <span class="mono" style="font-size:20px;color:var(--muted)">citation_label() →</span>
+        <span class="chip green">CALL-017 @ 01:14-01:46</span><span class="chip green">DOC-09 p.1 L3-6</span></div>
+      <div class="abs" data-k="count" style="left:120px;top:850px;font-size:26px">
+        <span style="color:var(--amber)">40 calls + 15 case files</span> <span data-k="count2">→ 357 chunks</span></div>`,
+    beats: at => ({ case: at("forty jail calls"), win: at("four-line window"), stride: at("three lines at a time"),
+                    keeps: at("Every chunk keeps"), id: at("call I D"), secs: at("start and end seconds"),
+                    page: at("a page and line"), label: at("citation label"), nobody: at("Nobody types") }),
+    render(t, b, k) {
+      appear(k.tp, t, 0, .7); appear(k.count, t, b.case);
+      k.count2.style.opacity = prog(t, b.win + .3);
+      appear(k.win, t, b.win, .5, 0);
+      put(k.win, prog(t, b.win, .5), 0, lerp(0, 62 * 3, prog(t, b.stride + .3, .9)));
+      appear(k.rp, t, b.keeps, .6);
+      const fieldAt = [b.keeps + .3, b.id, b.id + .3, b.secs + .3, b.secs + .8, b.secs + 1.2];
+      fieldAt.forEach((a, i) => appear(k["f" + i], t, a, .45, 8));
+      appear(k.doc, t, b.page);
+      appear(k.lab, t, b.label);
+    },
+  };
+})();
+
+SCENES["04"] = (() => {
+  const ST = [["POST /ask", "app.py:58"], ["Pipeline.ask", "pipeline.py:41"], ["Retriever.search", "retriever.py:36"],
+              ["MockAnswerer.answer", "answerer.py:59"], ["verify", "verifier.py:47"], ["log + respond", "app.py:38"]];
+  const SX = i => 120 + i * 284, SW = 256;
+  const RET = [["DOC-03 p.1 L6-9", "13.17"], ["DOC-09 p.1 L3-6", "9.56"], ["CALL-018 @ 00:23-00:57", "9.08"],
+               ["CALL-017 @ 01:14-01:46", "8.68"], ["DOC-03 p.1 L3-6", "7.99"]];
+  const CL = [["CALL-018 @ 00:39-00:45", 'Andre Whitfield said: "Tell Rico get rid of the green one, out past the quarry, for real."'],
+              ["CALL-017 @ 01:27-01:34", 'Andre Whitfield said: "Tell Rico get rid of the green one, take it out past the quarry in Dunmore."'],
+              ["DOC-09 p.1 L5", 'Det. Renee Okafor wrote: "One 1998 Honda Accord, green, was registered to Enrique Banks (known as Rico) of Dunmore."']];
+  return {
+    build: r => r.innerHTML = ST.map(([n, f], i) => `
+        <div class="box" data-k="s${i}" style="left:${SX(i)}px;top:200px;width:${SW}px;height:84px">
+          <div class="n" style="font-size:19px">${n}</div><div class="d mono" style="font-size:14px;margin-top:4px">${f}</div></div>
+        ${i < ST.length - 1 ? `<div class="arrow" style="left:${SX(i) + SW + 3}px;top:241px;width:22px"></div>` : ""}`).join("") + `
+      <div class="token" data-k="tok"></div>
+      <div class="card" data-k="q" style="left:120px;top:318px;width:1680px;padding:16px 26px;border-color:var(--blue)">
+        <span class="mono" style="color:var(--blue);font-size:18px;margin-right:16px">query</span>
+        <span style="font-size:26px">What did Andre tell Rico to do with the green car?</span></div>
+      <div class="abs label muted" data-k="rH" style="left:120px;top:420px">Retrieved · top 5 · BM25</div>
+      ${RET.map(([l, s], i) => `<div class="abs" data-k="r${i}" style="left:120px;top:${462 + i * 64}px;width:780px;height:54px;background:var(--panel);border:2px solid var(--line);border-radius:10px;display:flex;align-items:center;justify-content:space-between;padding:0 20px">
+          <span class="mono" style="font-size:19px">${l}</span><span class="mono muted" style="font-size:18px">${s}</span></div>`).join("")}
+      <div class="abs label muted" data-k="cH" style="left:960px;top:420px">Drafted claims</div>
+      <div class="abs mono" data-k="idf" style="left:1250px;top:418px;font-size:17px;color:var(--blue)">IDF-weighted coverage ≥ 0.55</div>
+      ${CL.map(([l, tx], i) => `<div class="card" data-k="c${i}" style="left:960px;top:${462 + i * 136}px;width:840px;height:124px;padding:14px 20px">
+          <div style="display:flex;justify-content:space-between;align-items:center"><span class="chip" data-k="cc${i}" style="font-size:17px">${l}</span>
+          <span class="mono" data-k="ck${i}" style="font-size:18px;color:var(--green)">✓ supported · score 1.0</span></div>
+          <div style="font-size:18px;line-height:1.35;margin-top:10px">${esc(tx)}</div></div>`).join("")}
+      <div class="abs mono" data-k="log" style="left:120px;top:900px;width:1680px;padding:18px 24px;font-size:18px;background:rgba(245,183,84,.06);border:2px solid var(--amber);border-radius:12px;white-space:nowrap;overflow:hidden">
+        <span style="color:var(--amber)">runs.jsonl +=</span> {"query": "What did Andre tell Rico…", "mode": "mock", "retrieved": [5 ids], "claims": [3 supported], "refused": [], "latency_ms": …}</div>`,
+    beats: at => ({ q: at("trace one question"), post: at("posts it"), ret: at("retriever keeps"), mock: at("mock answerer"),
+                    idf: at("rare vocabulary"), three: at("Three lines"), ver: at("pass the verifier"), log: at("logged") }),
+    render(t, b, k) {
+      ST.forEach((_, i) => appear(k["s" + i], t, 0, .6, 10));
+      appear(k.q, t, b.q, .6);
+      // Token stops: station index reached at each beat.
+      const stops = [[b.post, 0], [b.ret - .4, 1], [b.ret + .2, 2], [b.mock, 3], [b.ver, 4], [b.log, 5]];
+      let x = SX(0) + SW / 2 - 11, reached = -1;
+      for (let i = 0; i < stops.length; i++) {
+        const [a, s] = stops[i]; const p = prog(t, a, .5);
+        const from = i ? SX(stops[i - 1][1]) + SW / 2 - 11 : SX(0) + SW / 2 - 11;
+        if (p > 0) { x = lerp(from, SX(s) + SW / 2 - 11, i ? p : 1); if (p >= .5) reached = s; }
+      }
+      put(k.tok, prog(t, b.post, .4), x, 162);
+      ST.forEach((_, i) => k["s" + i].style.borderColor = i === reached ? "var(--blue)" : "var(--line)");
+      appear(k.rH, t, b.ret + .3);
+      for (let i = 0; i < 5; i++) appear(k["r" + i], t, b.ret + .4 + i * .15, .45, 10);
+      appear(k.cH, t, b.mock); appear(k.idf, t, b.idf);
+      for (let i = 0; i < 3; i++) {
+        appear(k["c" + i], t, b.three + .3 + i * .5, .5, 10);
+        const ok = prog(t, b.ver + i * .3, .4);
+        k["ck" + i].style.opacity = ok;
+        k["cc" + i].className = "chip" + (ok > .5 ? " green" : "");
+        k["c" + i].style.borderColor = ok > .5 ? "var(--green)" : "var(--line)";
+      }
+      appear(k.log, t, b.log, .6);
+    },
+  };
+})();
+
+SCENES["05"] = (() => {
+  // Excerpt of cite_or_refuse/verifier.py, real line numbers (checked by check_excerpts.py).
+  const CODE = [
+    [47, 'def verify(corpus: Corpus, claim: dict, judge: Judge | None = None) -> dict:'],
+    [null], [49, '    lines, why = corpus.resolve(citation)'], [50, '    if lines is None:'],
+    [51, '        return _refuse(claim, BAD_CITATION, why)'],
+    [53, '    quoted_lines = find_quote(lines, claim.get("quote", ""))'], [54, '    if quoted_lines is None:'],
+    [55, `        return _refuse(claim, QUOTE_NOT_FOUND, f"quote is not verbatim in {citation.get('label', 'the cited span')}")`],
+    [null], [58, '    cited = citation.get("speaker")'], [59, '    if cited and cited not in speakers:'],
+    [60, `        return _refuse(claim, UNSUPPORTED, f"cited speaker is {cited} but the quote is from {', '.join(speakers)}")`],
+    [null], [67, '    missing_numbers = numbers(claim_text) - numbers(span_text)'], [68, '    if missing_numbers:'],
+    [69, `        return _refuse(claim, UNSUPPORTED, f"number/date not in span: {', '.join(sorted(missing_numbers))}")`],
+    [null], [86, '    if overlap < SUPPORT_THRESHOLD:'],
+    [87, `        return _refuse(claim, UNSUPPORTED, f"lexical overlap {overlap:.2f} < {SUPPORT_THRESHOLD}", overlap)`],
+  ];
+  const hl = s => esc(s)
+    .replace(/\b(def|return|if|is|None|and|not|in)\b/g, '<span class="kw">$1</span>')
+    .replace(/\b(BAD_CITATION|QUOTE_NOT_FOUND|UNSUPPORTED|SUPPORT_THRESHOLD)\b/g, '<span class="cn">$1</span>')
+    .replace(/\b(verify|_refuse|find_quote|numbers|resolve)\(/g, '<span class="fn">$1</span>(');
+  const GROUPS = [[47, 49, 50, 51], [53, 54, 55], [58, 59, 60], [67, 68, 69], [86, 87]];
+  const TAGS = [["① bad_citation", 2], ["② quote_not_found", 6], ["③ unsupported", 10], ["③ unsupported", 14], ["③ unsupported", 17]];
+  const row = n => CODE.findIndex(c => c[0] === n);
+  return {
+    build: r => r.innerHTML = `
+      <div class="panel" data-k="cp" style="left:120px;top:176px;width:1680px;height:580px">
+        <div class="abs mono" style="left:30px;top:18px;font-size:18px;color:var(--muted)">cite_or_refuse/verifier.py</div>
+        <div class="code" style="left:30px;top:56px;right:30px">
+          ${GROUPS.map((g, i) => `<div class="band" data-k="band${i}" style="top:${row(g[0]) * 27}px;height:${(row(g[g.length - 1]) - row(g[0]) + 1) * 27}px"></div>`).join("")}
+          ${CODE.map(([n, s]) => n === null ? `<div class="row gap"><span class="ln">⋮</span></div>` : `<div class="row"><span class="ln">${n}</span>${hl(s)}</div>`).join("")}
+        </div>
+        ${TAGS.map(([tx, ri], i) => `<div class="abs" data-k="tag${i}" style="right:24px;top:${56 + ri * 27 - 6}px"><span class="chip red" style="font-size:16px;padding:3px 10px">${tx}</span></div>`).join("")}
+      </div>
+      <div class="card" data-k="ws" style="left:120px;top:790px;width:700px;height:210px">
+        <div class="mono" style="font-size:20px"><span class="fn">normalize_ws()</span> <span class="muted">· text.py:19</span></div>
+        <div style="font-size:21px;line-height:1.5;margin-top:12px">Collapses whitespace and maps curly quotes and dashes to plain ones.<br><span class="muted">Case is kept: the quote must match verbatim.</span></div>
+      </div>
+      <div class="card" data-k="ff" style="left:860px;top:790px;width:940px;height:210px">
+        <div class="mono muted" style="font-size:16px">demo: inject a fault · faults.py:21</div>
+        <div style="display:flex;align-items:center;gap:20px;margin-top:20px">
+          <span class="chip green">CALL-017 @ 01:27-01:34</span>
+          <span class="mono" style="color:var(--muted);font-size:26px" data-k="ffA">→</span>
+          <span class="chip red" data-k="ffB">CALL-017 @ 05:19-05:39</span></div>
+        <div style="display:flex;align-items:center;gap:16px;margin-top:20px" data-k="ffC">
+          <span style="font-size:20px" class="muted">call runs 00:00-05:14</span>
+          <span class="chip red">refused · bad_citation</span></div>
+      </div>`,
+    beats: at => ({ plain: at("plain code"), g: [at("real lines"), at("verbatim"), at("speaker must match"),
+                    at("number and name"), at("zero point six")], ws: at("whitespace and curly"),
+                    fault: at("inject a fault"), moves: at("moves past"), refused: at("Refused, with") }),
+    render(t, b, k) {
+      appear(k.cp, t, 0, .7);
+      const g = b.g, ends = [g[1], g[2], g[3], g[4], b.fault];
+      for (let i = 0; i < 5; i++) {
+        const on = prog(t, g[i] - .2, .4) * (1 - prog(t, ends[i] - .2, .4));
+        k["band" + i].style.opacity = on;
+        k["tag" + i].style.opacity = prog(t, g[i], .4) * (i >= 3 ? on : 1);
+      }
+      appear(k.ws, t, b.ws);
+      appear(k.ff, t, b.fault);
+      k.ffA.style.opacity = prog(t, b.moves, .4); k.ffB.style.opacity = prog(t, b.moves + .2, .4);
+      appear(k.ffC, t, b.refused, .5, 8);
+    },
+  };
+})();
+
+SCENES["06"] = (() => {
+  const TILES = [["recall@5", "1.00", "≥ 0.85"], ["quote fidelity (shown)", "1.00", "= 1.0"],
+                 ["unanswerable refused", "1.00", "≥ 0.8"], ["false refusals", "0.00", "≤ 0.15"]];
+  const FAULTS = ["wrong_timestamp", "altered_quote", "swapped_speaker"];
+  const dot = i => { const c = i % 6, r = Math.floor(i / 6); return [120 + c * 66, 300 + r * 62]; };
+  return {
+    build: r => r.innerHTML = `
+      <div class="abs" data-k="cmd" style="left:120px;top:192px"><span class="chip" style="font-size:20px">$ python eval.py --inject-faults</span></div>
+      ${Array.from({ length: 30 }, (_, i) => { const [x, y] = dot(i); const cat = i < 20 ? "a" : i < 25 ? "m" : "u";
+        const st = cat === "a" ? "background:var(--blue)" : cat === "m" ? "background:linear-gradient(90deg,var(--blue) 50%,#2f6aa3 50%)" : "border:3px solid var(--muted)";
+        return `<div class="abs" data-k="d${i}" style="left:${x}px;top:${y}px;width:42px;height:42px;border-radius:50%;${st}"></div>`; }).join("")}
+      <div class="abs" data-k="leg" style="left:120px;top:630px;font-size:20px;line-height:1.7">
+        <div><span style="color:var(--blue)">●</span> 20 answerable</div><div><span style="color:#2f6aa3">◐</span> 5 need two sources</div>
+        <div><span class="muted">○</span> 5 unanswerable</div></div>
+      <div class="abs" data-k="rep" style="left:120px;top:810px"><span class="chip amber">eval_report.json</span><br><span class="chip amber" style="margin-top:10px">eval_report_faults.json</span></div>
+      ${TILES.map(([n, v, tg], i) => `<div class="card" data-k="t${i}" style="left:${800 + (i % 2) * 505}px;top:${190 + Math.floor(i / 2) * 136}px;width:490px;height:122px;padding:16px 22px">
+          <div class="muted" style="font-size:19px">${n}</div>
+          <div style="display:flex;align-items:baseline;gap:18px;margin-top:4px"><span style="font:600 46px var(--display)">${v}</span>
+          <span class="mono" style="font-size:18px;color:var(--green)">target ${tg} ✓</span></div></div>`).join("")}
+      <div class="abs" data-k="vb" style="left:800px;top:560px;width:1000px;height:64px;border:2px solid var(--line);border-radius:12px;background:var(--panel);display:flex;align-items:center;padding-left:24px">
+        <span class="mono" style="font-size:20px">verifier</span></div>
+      ${FAULTS.map((f, i) => `<div class="abs" data-k="f${i}" style="left:${960 + i * 280}px;top:476px;width:280px;text-align:center"><span class="chip red" data-k="fx${i}" style="font-size:17px">${f}</span></div>
+        <div class="abs mono" data-k="fc${i}" style="left:${960 + i * 280}px;top:636px;width:280px;text-align:center;font-size:18px;color:var(--red)">caught 3 / 3</div>`).join("")}
+      <div class="abs" data-k="nine" style="left:800px;top:690px;font:600 34px var(--display)"><span style="color:var(--red)">9 / 9</span> corrupted claims caught</div>
+      <div class="card" data-k="prec" style="left:800px;top:770px;width:1000px;height:236px;padding:18px 24px">
+        <div style="display:flex;align-items:baseline;gap:18px"><span class="muted" style="font-size:20px">citation precision</span>
+          <span style="font:600 44px var(--display)">0.68</span></div>
+        <div style="font-size:19px;margin-top:6px" class="muted">"What vehicle did Paul Ortiz describe?"</div>
+        <div style="font-size:19px;margin-top:6px">quoted <span style="color:var(--amber)">"A vehicle came out of the lot fast…"</span></div>
+        <div style="font-size:19px;margin-top:4px">instead of <span style="color:var(--green)">"…a blue pickup truck, an older Ford."</span></div></div>`,
+    beats: at => ({ gold: at("thirty gold questions"), unans: at("unanswerable"), recall: at("recall at five"),
+                    fid: at("every shown quote"), ref: at("every unanswerable"), fault: at("fault injection"),
+                    types: at("a wrong timestamp"), nine: at("nine of nine"), prec: at("Citation precision") }),
+    render(t, b, k) {
+      appear(k.cmd, t, 0, .6);
+      for (let i = 0; i < 30; i++) appear(k["d" + i], t, b.gold + i * .03, .35, 0);
+      appear(k.leg, t, b.unans); appear(k.rep, t, b.recall - .4);
+      appear(k.t0, t, b.recall); appear(k.t1, t, b.fid); appear(k.t2, t, b.ref); appear(k.t3, t, b.ref + .5);
+      appear(k.vb, t, b.fault);
+      for (let i = 0; i < 3; i++) {
+        const a = b.types + i * .9, p = prog(t, a, .5), drop = prog(t, b.nine - .6 + i * .15, .6);
+        // Each corrupted claim drops into the verifier and stays there: caught, not passed through.
+        put(k["f" + i], p, 0, lerp(0, 98, drop) - (1 - p) * 12);
+        k["fx" + i].style.background = drop > .5 ? "rgba(255,107,107,.22)" : "";
+        k["fc" + i].style.opacity = prog(t, b.nine - .1 + i * .15, .4);
+      }
+      appear(k.nine, t, b.nine + .3); appear(k.prec, t, b.prec);
+    },
+  };
+})();
+
+SCENES["07"] = (() => {
+  const CX = i => 120 + i * 575, CW = 530;
+  const NEXT = ["Dense retrieval (FAISS) beside BM25", "Same eval in LLM mode: two models, diff the reports",
+                "Fuzzy, timestamp-aware quote matching", "Bigger gold set, by someone else, tracked in CI"];
+  return {
+    build: r => r.innerHTML = `
+      <div class="card" data-k="g0" style="left:${CX(0)}px;top:190px;width:${CW}px;height:310px">
+        <div style="font:600 28px var(--display)">Mock claims always score 1.0</div>
+        <div style="font-size:21px;line-height:1.45;margin-top:18px">Andre Whitfield said: <span class="hl-quote">"Tell Rico get rid of the green one, take it out past the quarry in Dunmore."</span></div>
+        <div class="mono muted" style="font-size:16px;margin-top:18px">claim = speaker + quote → overlap 1.0<br>answerer.py:96-101</div></div>
+      <div class="card" data-k="g1" style="left:${CX(1)}px;top:190px;width:${CW}px;height:310px">
+        <div style="font:600 28px var(--display)">Verbatim assumes clean text</div>
+        <div class="mono muted" style="font-size:15px;margin-top:16px">illustration: speech-to-text noise</div>
+        <div style="font-size:21px;line-height:1.45;margin-top:8px">"Tell Rico get rid of the green <span style="color:var(--red);text-decoration:underline">won</span>…"</div>
+        <div style="margin-top:22px"><span class="chip red">quote_not_found</span></div></div>
+      <div class="card" data-k="g2" style="left:${CX(2)}px;top:190px;width:${CW}px;height:310px">
+        <div style="font:600 28px var(--display)">Traceable <span style="color:var(--green)">✓</span>  ·  true <span class="muted">?</span></div>
+        <div style="font-size:19px;line-height:1.4;margin-top:20px"><span class="chip green" style="font-size:16px">DOC-03 p.1 L7</span><br>"The car was dark green, I am sure of the color."</div>
+        <div style="font-size:19px;line-height:1.4;margin-top:16px"><span class="chip green" style="font-size:16px">DOC-04 p.1 L7</span><br>"The color was blue, I am pretty sure, but it was dark out."</div>
+        <div class="mono muted" style="font-size:15px;margin-top:16px">both shown for "What color was the vehicle…?"</div></div>
+      <div class="abs label" data-k="nh" style="left:120px;top:570px;color:var(--blue)">Next steps</div>
+      ${NEXT.map((n, i) => `<div class="card" data-k="n${i}" style="left:${120 + i * 428}px;top:620px;width:396px;height:140px;font-size:23px;line-height:1.4"><span class="mono" style="color:var(--blue)">→</span> ${n}</div>`).join("")}
+      <div class="abs" data-k="smoke" style="left:120px;top:810px"><span class="chip" style="font-size:18px">today: 30 gold questions, same author as the data → a smoke test, not a benchmark</span></div>`,
+    beats: at => ({ g0: at("In mock mode"), g1: at("Verbatim matching"), g2: at("traceable, not true"), next: at("Next steps"),
+                    n: [at("dense retrieval"), at("comparing models"), at("fuzzy matching"), at("bigger gold set")],
+                    smoke: at("written by someone") }),
+    render(t, b, k) {
+      appear(k.g0, t, b.g0); appear(k.g1, t, b.g1); appear(k.g2, t, b.g2);
+      appear(k.nh, t, b.next); b.n.forEach((a, i) => appear(k["n" + i], t, a));
+      appear(k.smoke, t, b.smoke);
+    },
+  };
+})();
+
+SCENES["08"] = (() => {
+  const RECAP = ["Citations are built from metadata, never written by the model.",
+                 "String matching decides whether a quote exists.", "Refusals stay visible, with a reason.",
+                 "The eval runs the same pipeline, offline, on synthetic data."];
+  return {
+    build: r => r.innerHTML = `
+      <div data-k="left">
+      <div class="panel" data-k="term" style="left:120px;top:180px;width:900px;height:250px;padding:24px 28px;font:20px/1.7 var(--mono)">
+        <div><span style="color:var(--blue)">$</span> python -m pip install -r requirements.txt \\</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&amp;&amp; python run.py</div>
+        <div class="muted" data-k="l1">Indexed 357 chunks from 40 calls and 15 case files.</div>
+        <div class="muted" data-k="l2">Open http://127.0.0.1:8000</div></div>
+      <div class="abs" data-k="nokey" style="left:120px;top:452px"><span class="chip">no API key needed</span></div>
+      <div class="abs" style="left:120px;top:520px;display:flex;gap:14px">
+        <span class="chip blue" data-k="tab0" style="font-size:20px">Ask</span><span class="chip blue" data-k="tab1" style="font-size:20px">Source viewer</span>
+        <span class="chip blue" data-k="tab2" style="font-size:20px">Eval</span></div>
+      <div class="panel" data-k="env" style="left:120px;top:610px;width:900px;height:230px;padding:22px 28px">
+        <div class="mono muted" style="font-size:17px">.env (local, never committed)</div>
+        <div class="mono" style="font-size:22px;margin-top:10px"><span style="color:var(--amber)">COR_LLM_MODEL</span>=&lt;model-name&gt;</div>
+        <div class="mono" data-k="flow" style="font-size:19px;margin-top:26px">model → line IDs → <span class="fn">citation_for()</span> → <span style="color:var(--green)">citation</span>
+          <div class="muted" style="font-size:15px;margin-top:6px">llm.py:80-96 · built from our metadata</div></div></div>
+      </div>
+      <div class="abs label" data-k="rh" style="left:1100px;top:186px;color:var(--green)">Recap</div>
+      ${RECAP.map((x, i) => `<div class="card" data-k="r${i}" style="left:1100px;top:${236 + i * 150}px;width:700px;height:130px;display:flex;align-items:center;gap:22px">
+          <span style="font:600 40px var(--display);color:var(--green)">${i + 1}</span><span style="font-size:25px;line-height:1.35">${x}</span></div>`).join("")}`,
+    beats: at => ({ open: at("Then open"), key: at("No key"), tabs: [at("Ask"), at("Source viewer"), at("and Eval")],
+                    env: at("one environment variable"), picks: at("picks lines"), recap: at("To recap"),
+                    r: [at("citations come"), at("string matching"), at("refusals stay"), at("the eval measures")] }),
+    render(t, b, k) {
+      appear(k.term, t, 0, .7);
+      appear(k.l1, t, b.open, .5, 6); appear(k.l2, t, b.open + .5, .5, 6);
+      appear(k.nokey, t, b.key);
+      b.tabs.forEach((a, i) => appear(k["tab" + i], t, a, .45, 8));
+      appear(k.env, t, b.env); appear(k.flow, t, b.picks);
+      k.left.style.opacity = 1 - .5 * prog(t, b.recap, .8);
+      appear(k.rh, t, b.recap);
+      b.r.forEach((a, i) => appear(k["r" + i], t, a, .6, 12));
+    },
+  };
+})();
+
+// ---------------------------------------------------------------------------------------------------------
+// Runtime
+// ---------------------------------------------------------------------------------------------------------
+let TIMING = null;
+const RUNTIME = [];
+
+function setup(timing) {
+  TIMING = timing;
+  const host = document.getElementById("scenes");
+  for (const sc of timing.scenes) {
+    const def = SCENES[sc.id];
+    const root = document.createElement("div");
+    root.className = "scene"; root.id = "s" + sc.id;
+    root.innerHTML = `<div class="title">${esc(sc.title)}</div>`;
+    const body = document.createElement("div");
+    def.build(body);
+    root.appendChild(body);
+    host.appendChild(root);
+    const k = {};
+    root.querySelectorAll("[data-k]").forEach(el => k[el.dataset.k] = el);
+    k.__title = root.querySelector(".title");
+    const beats = def.beats(p => phraseTime(sc, p));
+    RUNTIME.push({ sc, def, root, k, beats });
+  }
+  const bar = document.getElementById("progress");
+  for (const sc of timing.scenes.slice(1)) {
+    const tk = document.createElement("div"); tk.className = "tick";
+    tk.style.left = (sc.start / timing.total * 1920).toFixed(1) + "px"; bar.appendChild(tk);
+  }
+}
+
+window.renderAt = function renderAt(seconds) {
+  const t = Math.max(0, Math.min(seconds, TIMING.total - 1e-6));
+  let cur = RUNTIME[RUNTIME.length - 1];
+  for (const r of RUNTIME) if (t >= r.sc.start && t < r.sc.start + r.sc.duration) { cur = r; break; }
+  for (const r of RUNTIME) if (r !== cur) r.root.style.opacity = 0;
+  const local = t - cur.sc.start;
+  const fadeIn = cur === RUNTIME[0] ? 1 : prog(local, 0, .35);
+  const fadeOut = cur === RUNTIME[RUNTIME.length - 1] ? 1 - prog(local, cur.sc.duration - .6, .6) : 1;
+  cur.root.style.opacity = (fadeIn * fadeOut).toFixed(4);
+  cur.k.__title.style.opacity = cur.sc.id === "01" ? 0 : 1;
+  cur.def.render(local, cur.beats, cur.k);
+  document.getElementById("chapter").innerHTML = `${cur.sc.id} / <b>${esc(cur.sc.title)}</b>`;
+  document.getElementById("bar").style.width = (t / TIMING.total * 1920).toFixed(1) + "px";
+  return cur.sc.id;
+};
+
+window.ready = (async () => {
+  const timing = await (await fetch("timing.json", { cache: "no-store" })).json();
+  await document.fonts.ready;
+  setup(timing);
+  window.MISSING_BEATS = MISSING;
+  if (MISSING.length) console.warn("phrases not found in narration:", MISSING);
+  renderAt(0);
+  return { total: timing.total, missing: MISSING };
+})();
+
+// ---------------------------------------------------------------------------------------------------------
+// Preview mode only (play / scrub). Render mode (?render) hides this and drives renderAt() directly.
+// ---------------------------------------------------------------------------------------------------------
+if (new URLSearchParams(location.search).has("render")) {
+  document.body.classList.add("render");
+} else {
+  const stage = document.getElementById("stage");
+  const fit = () => { const s = Math.min(innerWidth / 1920, (innerHeight - 56) / 1080);
+    stage.style.transform = `scale(${s})`; };
+  addEventListener("resize", fit); fit();
+  const audio = new Audio("out/narration.wav");
+  const scrub = document.getElementById("scrub"), clock = document.getElementById("clock"),
+        btn = document.getElementById("play");
+  let playing = false, t0 = 0, wall = 0, hasAudio = true;
+  audio.onerror = () => { hasAudio = false; };
+  const now = () => playing ? (hasAudio ? audio.currentTime : t0 + (performance.now() - wall) / 1000) : t0;
+  const show = t => { renderAt(t); scrub.value = t; clock.textContent = `${Math.floor(t / 60)}:${(t % 60).toFixed(1).padStart(4, "0")}`; };
+  window.ready.then(({ total }) => { scrub.max = total; });
+  btn.onclick = () => {
+    playing = !playing; btn.textContent = playing ? "Pause" : "Play";
+    if (playing) { wall = performance.now(); if (hasAudio) { audio.currentTime = t0; audio.play().catch(() => { hasAudio = false; }); } }
+    else { t0 = hasAudio ? audio.currentTime : now(); audio.pause(); }
+  };
+  scrub.oninput = () => { t0 = +scrub.value; wall = performance.now(); if (hasAudio) audio.currentTime = t0; show(t0); };
+  const loop = () => { if (playing && TIMING) show(now()); requestAnimationFrame(loop); };
+  requestAnimationFrame(loop);
+}
+</script>
+</body>
+</html>

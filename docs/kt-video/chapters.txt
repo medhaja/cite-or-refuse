@@ -1,0 +1,8 @@
+0:00 Why it exists
+0:23 Architecture
+0:47 Data model
+1:08 One request, end to end
+1:35 The verifier
+2:03 Eval and fault injection
+2:32 Gotchas and next steps
+3:05 Run it, and recap

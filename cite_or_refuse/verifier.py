@@ -75,10 +75,14 @@ def verify(corpus: Corpus, claim: dict, judge: Judge | None = None) -> dict:
     terms = set(tokenize(claim_text))
     overlap = len(terms & set(tokenize(vocab_text))) / len(terms) if terms else 0.0
     if judge is not None:
-        ok, score = judge(claim_text, span_text)
-        if not ok:
+        try:
+            ok, score = judge(claim_text, span_text)
+        except Exception:  # judge unavailable: fall through to the lexical check
+            ok = None
+        if ok is False:
             return _refuse(claim, UNSUPPORTED, "LLM judge: span does not support the claim", score)
-        return dict(claim, verdict="supported", reason=None, detail="", score=round(score, 3))
+        if ok:
+            return dict(claim, verdict="supported", reason=None, detail="LLM judge", score=round(score, 3))
     if overlap < SUPPORT_THRESHOLD:
         return _refuse(claim, UNSUPPORTED, f"lexical overlap {overlap:.2f} < {SUPPORT_THRESHOLD}", overlap)
     return dict(claim, verdict="supported", reason=None, detail="", score=round(overlap, 3))

@@ -1,5 +1,11 @@
 # Cite or Refuse
 
+<!-- walkthrough-video -->
+[![Watch the 3:38 walkthrough](docs/kt-video/poster.jpg)](https://medhaja.github.io/cite-or-refuse/)
+
+**[Watch the 3:38 walkthrough](https://medhaja.github.io/cite-or-refuse/)** (plays in your browser)
+<!-- /walkthrough-video -->
+
 **Run the demo (Python 3.10+, tested on 3.13):**
 
 ```bash

@@ -1,0 +1,259 @@
+1
+00:00:00,275 --> 00:00:04,850
+Closure's public pitch is that the AI finds the material, and people check it.
+
+2
+00:00:04,975 --> 00:00:09,562
+That evidence still has to survive court, and one invented quote could cost trust
+
+3
+00:00:09,562 --> 00:00:11,125
+with many agencies.
+
+4
+00:00:11,300 --> 00:00:13,900
+Cite or Refuse is built on one rule.
+
+5
+00:00:14,037 --> 00:00:16,925
+Every claim links to an exact line in the record.
+
+6
+00:00:17,025 --> 00:00:20,425
+If it can't be traced, it's refused, and you see why.
+
+7
+00:00:20,613 --> 00:00:22,925
+All of it runs on synthetic data.
+
+8
+00:00:24,075 --> 00:00:25,425
+Here's the big picture.
+
+9
+00:00:25,538 --> 00:00:28,150
+A seeded generator writes a fictional case.
+
+10
+00:00:28,275 --> 00:00:31,825
+The chunker splits it into windows that keep their source metadata.
+
+11
+00:00:31,962 --> 00:00:36,400
+A BM25 retriever finds the best chunks, the answerer drafts quoted
+
+12
+00:00:36,400 --> 00:00:39,325
+claims, and the verifier checks each one.
+
+13
+00:00:39,500 --> 00:00:42,675
+FastAPI serves it to one static page.
+
+14
+00:00:42,800 --> 00:00:46,825
+And the eval calls the same pipeline, so you measure what users see.
+
+15
+00:00:47,925 --> 00:00:52,475
+The case is forty jail calls and fifteen case files, from a fixed seed.
+
+16
+00:00:52,625 --> 00:00:56,400
+The chunker slides a four-line window, three lines at a time.
+
+17
+00:00:56,538 --> 00:01:01,275
+Every chunk keeps what's needed to cite it: a call ID with start and end seconds,
+
+18
+00:01:01,388 --> 00:01:03,475
+or a page and line numbers.
+
+19
+00:01:03,587 --> 00:01:06,500
+The citation label is computed from those fields.
+
+20
+00:01:06,613 --> 00:01:07,800
+Nobody types it.
+
+21
+00:01:08,925 --> 00:01:10,350
+Let's trace one question.
+
+22
+00:01:10,450 --> 00:01:12,925
+What did Andre tell Rico to do with the green car?
+
+23
+00:01:13,050 --> 00:01:15,150
+The page posts it to /ask.
+
+24
+00:01:15,250 --> 00:01:17,700
+The retriever keeps the top five chunks.
+
+25
+00:01:17,800 --> 00:01:21,950
+The mock answerer scores each line by how much of the question's rare vocabulary it
+
+26
+00:01:21,950 --> 00:01:22,775
+covers.
+
+27
+00:01:22,900 --> 00:01:27,825
+Three lines clear the bar: the same instruction from two near-duplicate calls, plus
+
+28
+00:01:27,825 --> 00:01:29,775
+the car's registration record.
+
+29
+00:01:29,938 --> 00:01:34,925
+All three pass the verifier, and the request is logged to runs.jsonl.
+
+30
+00:01:36,025 --> 00:01:39,325
+The verifier is plain code, and the first failure wins.
+
+31
+00:01:39,462 --> 00:01:42,025
+One: does the citation point at real lines?
+
+32
+00:01:42,100 --> 00:01:43,925
+If not, it's a bad citation.
+
+33
+00:01:44,075 --> 00:01:45,650
+Two: is the quote verbatim?
+
+34
+00:01:45,775 --> 00:01:48,425
+Only whitespace and curly quotes are normalized.
+
+35
+00:01:48,550 --> 00:01:50,100
+Three: is it supported?
+
+36
+00:01:50,225 --> 00:01:54,175
+The speaker must match, every number and name must be in the span, and word overlap
+
+37
+00:01:54,175 --> 00:01:56,125
+must reach 0.6.
+
+38
+00:01:56,262 --> 00:02:00,712
+In the demo, inject a fault, and call seventeen's timestamp moves past the end of
+
+39
+00:02:00,712 --> 00:02:01,375
+the call.
+
+40
+00:02:01,488 --> 00:02:03,125
+Refused, with the reason.
+
+41
+00:02:04,250 --> 00:02:08,350
+The eval runs the same pipeline over thirty gold questions, five of them
+
+42
+00:02:08,350 --> 00:02:09,475
+unanswerable.
+
+43
+00:02:09,613 --> 00:02:14,025
+In mock mode, recall@5 is one, every shown quote is verbatim, and every
+
+44
+00:02:14,025 --> 00:02:16,225
+unanswerable question is refused.
+
+45
+00:02:16,362 --> 00:02:21,050
+Then fault injection corrupts a fifth of the claims: a wrong timestamp, an altered
+
+46
+00:02:21,050 --> 00:02:22,925
+quote, or a swapped speaker.
+
+47
+00:02:23,062 --> 00:02:25,175
+The verifier catches nine of nine.
+
+48
+00:02:25,325 --> 00:02:30,050
+Citation precision is only 0.68, because the mock sometimes quotes a
+
+49
+00:02:30,050 --> 00:02:31,175
+related line.
+
+50
+00:02:32,325 --> 00:02:33,350
+Some gotchas.
+
+51
+00:02:33,463 --> 00:02:38,100
+In mock mode the claim is built from the quote, so a clean claim always scores one.
+
+52
+00:02:38,225 --> 00:02:42,700
+The support check really matters against faults, or a model that paraphrases.
+
+53
+00:02:42,837 --> 00:02:47,650
+Verbatim matching assumes clean transcripts; speech-to-text errors would break it.
+
+54
+00:02:47,750 --> 00:02:52,350
+And the verifier proves traceable, not true: the green car and the blue pickup
+
+55
+00:02:52,350 --> 00:02:53,825
+witnesses both pass.
+
+56
+00:02:54,425 --> 00:02:59,700
+Next steps: dense retrieval beside BM25, comparing models on the same
+
+57
+00:02:59,700 --> 00:03:04,175
+eval, fuzzy matching, and a bigger gold set, written by someone else.
+
+58
+00:03:05,325 --> 00:03:09,100
+To run it, install the requirements and run python run.py.
+
+59
+00:03:09,262 --> 00:03:11,900
+Then open localhost, port eight thousand.
+
+60
+00:03:12,038 --> 00:03:13,025
+No key needed.
+
+61
+00:03:13,125 --> 00:03:16,225
+You get three tabs: Ask, Source viewer, and Eval.
+
+62
+00:03:16,325 --> 00:03:19,275
+To try a real model, set one environment variable.
+
+63
+00:03:19,400 --> 00:03:23,800
+The model only picks lines by ID; our metadata builds the citation.
+
+64
+00:03:23,938 --> 00:03:29,050
+To recap: citations come from metadata, string matching decides if a quote exists,
+
+65
+00:03:29,125 --> 00:03:32,225
+refusals stay visible, and the eval measures it all.

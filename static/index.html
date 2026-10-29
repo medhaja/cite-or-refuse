@@ -1,1 +1,391 @@
-<!doctype html><title>Cite or Refuse</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cite or Refuse</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232f5bd3'/%3E%3Cpath d='M4 8.5l2.5 2.5L12 5' stroke='white' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f6f7f9; --panel: #ffffff; --ink: #1b1f24; --muted: #5d6673; --line: #e3e6eb;
+    --accent: #2f5bd3; --accent-soft: #e8eefc; --ok: #1d7a46; --ok-soft: #e4f4ea;
+    --bad: #b42318; --bad-soft: #fdecea; --hl: #fff3bf; --hl-edge: #f2c94c;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111418; --panel: #191d23; --ink: #e6e9ee; --muted: #9aa3ae; --line: #2a3039;
+      --accent: #7b9cff; --accent-soft: #1f2a44; --ok: #5cc98b; --ok-soft: #15291e;
+      --bad: #ff7b72; --bad-soft: #3a1714; --hl: #3d3413; --hl-edge: #b8962e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { background: var(--panel); border-bottom: 1px solid var(--line); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  .top { display: flex; align-items: baseline; gap: 14px; padding: 16px 0 8px; flex-wrap: wrap; }
+  .top h1 { margin: 0; font-size: 20px; letter-spacing: -0.01em; }
+  .top .sub { color: var(--muted); font-size: 13px; }
+  .pill { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 99px;
+          background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  nav { display: flex; gap: 4px; }
+  nav button { border: 0; background: none; padding: 10px 14px; font: inherit; color: var(--muted);
+               border-bottom: 2px solid transparent; cursor: pointer; }
+  nav button.active { color: var(--ink); border-bottom-color: var(--accent); font-weight: 600; }
+  main { padding: 22px 0 60px; }
+  .notice { font-size: 12px; color: var(--muted); padding: 6px 0 0; }
+  section[hidden] { display: none; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+  .ask-row { display: flex; gap: 8px; }
+  .ask-row input[type=text] { flex: 1; font: inherit; padding: 10px 12px; border: 1px solid var(--line);
+                              border-radius: 8px; background: var(--bg); color: var(--ink); }
+  .btn { font: inherit; border: 0; border-radius: 8px; padding: 10px 18px; background: var(--accent);
+         color: #fff; font-weight: 600; cursor: pointer; }
+  .btn:disabled { opacity: .6; cursor: default; }
+  .opts { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; gap: 10px;
+          flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+  .samples { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .sample { font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+            padding: 4px 10px; border-radius: 99px; cursor: pointer; }
+  .sample:hover { border-color: var(--accent); }
+  .summary { margin: 20px 0 10px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .summary h2 { margin: 0; font-size: 17px; }
+  .muted { color: var(--muted); }
+  .small { font-size: 13px; }
+  .claims { display: grid; gap: 10px; }
+  .claim { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--ok);
+           border-radius: 8px; padding: 12px 14px; }
+  .claim .who { font-weight: 600; }
+  .claim blockquote { margin: 6px 0 10px; padding: 0; font-size: 16px; }
+  .meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 12px; }
+  .chip { font: 12px var(--mono); border: 1px solid var(--accent); color: var(--accent); background: var(--accent-soft);
+          border-radius: 6px; padding: 2px 8px; cursor: pointer; }
+  .chip:hover { filter: brightness(0.97); }
+  .chip.bad { border-color: var(--bad); color: var(--bad); background: var(--bad-soft); }
+  .tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; border-radius: 4px;
+         padding: 1px 6px; }
+  .tag.ok { background: var(--ok-soft); color: var(--ok); }
+  .tag.bad { background: var(--bad-soft); color: var(--bad); }
+  .tag.neutral { background: var(--bg); color: var(--muted); border: 1px solid var(--line); }
+  .refused { margin-top: 18px; border: 1px solid var(--bad); background: var(--bad-soft); border-radius: 10px;
+             padding: 12px 16px; }
+  .refused h3 { margin: 0 0 8px; font-size: 15px; color: var(--bad); }
+  .refused .item { padding: 8px 0; border-top: 1px solid color-mix(in srgb, var(--bad) 25%, transparent); }
+  .refused .item:first-of-type { border-top: 0; }
+  .refused .q { text-decoration: line-through; text-decoration-color: var(--bad); }
+  .noanswer { background: var(--panel); border: 1px dashed var(--line); border-radius: 10px; padding: 16px; }
+  details { margin-top: 18px; }
+  summary { cursor: pointer; color: var(--muted); font-size: 13px; }
+  .retrieved { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; }
+  .retrieved li { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px;
+                  font-size: 13px; }
+  .empty { color: var(--muted); text-align: center; padding: 40px 0; }
+  /* Source viewer */
+  .src { display: grid; grid-template-columns: 250px 1fr; gap: 16px; align-items: start; }
+  .src-list { max-height: 72vh; overflow: auto; padding: 8px; }
+  .src-list h4 { margin: 8px 6px 4px; font-size: 12px; color: var(--muted); text-transform: uppercase; }
+  .src-list button { display: block; width: 100%; text-align: left; border: 0; background: none; font: inherit;
+                     font-size: 13px; padding: 5px 8px; border-radius: 6px; color: var(--ink); cursor: pointer; }
+  .src-list button.active, .src-list button:hover { background: var(--accent-soft); }
+  .src-list code { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .viewer h2 { margin: 0 0 2px; font-size: 18px; }
+  .lines { margin-top: 12px; border-top: 1px solid var(--line); }
+  .ln { display: grid; grid-template-columns: 92px 150px 1fr; gap: 10px; padding: 5px 8px;
+        border-bottom: 1px solid var(--line); font-size: 14px; }
+  .ln.doc { grid-template-columns: 44px 1fr; }
+  .ln .ts { font-family: var(--mono); font-size: 12px; color: var(--muted); padding-top: 2px; }
+  .ln .spk { font-weight: 600; font-size: 13px; }
+  .ln.sys { color: var(--muted); font-style: italic; }
+  .ln.hl { background: var(--hl); box-shadow: inset 3px 0 0 var(--hl-edge); }
+  .ln.hdr { color: var(--muted); font-size: 12px; }
+  .page { margin-top: 14px; }
+  .page h3 { margin: 0; font-size: 13px; color: var(--muted); }
+  .cite-banner { margin-top: 10px; font-size: 13px; padding: 8px 10px; border-radius: 8px; background: var(--hl); }
+  .cite-banner.bad { background: var(--bad-soft); color: var(--bad); }
+  /* Eval */
+  .toggle { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .toggle button { border: 0; background: var(--panel); font: inherit; font-size: 13px; padding: 7px 14px;
+                   cursor: pointer; color: var(--muted); }
+  .toggle button.active { background: var(--accent); color: #fff; }
+  .metrics { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin-top: 14px; }
+  .metric .v { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; }
+  .metric .n { font-size: 13px; color: var(--muted); }
+  .metric .t { font-size: 12px; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  .faults { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 6px; }
+  @media (max-width: 760px) {
+    .src { grid-template-columns: 1fr; }
+    .src-list { max-height: 220px; }
+    .ln { grid-template-columns: 70px 1fr; }
+    .ln .spk { grid-column: 2; }
+    .ln .tx { grid-column: 1 / -1; }
+    .ask-row { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <h1>Cite or Refuse</h1>
+      <span class="sub" id="caseLine">Loading case…</span>
+      <span class="pill" id="modePill">mock</span>
+    </div>
+    <nav>
+      <button data-tab="ask" class="active">Ask</button>
+      <button data-tab="source">Source viewer</button>
+      <button data-tab="eval">Eval</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="tab-ask">
+    <div class="card">
+      <form class="ask-row" id="askForm">
+        <input type="text" id="q" placeholder="Ask about the case, e.g. What did Andre tell Rico to do with the green car?"
+               autocomplete="off" aria-label="Question">
+        <button class="btn" id="askBtn">Ask</button>
+      </form>
+      <div class="opts">
+        <label><input type="checkbox" id="fault"> Inject a fault into one drafted claim (to watch the verifier catch it)</label>
+        <span>Every shown claim is checked against its cited span</span>
+      </div>
+      <div class="samples" id="samples"></div>
+    </div>
+    <div id="result"><p class="empty">Pick a sample question or type your own.</p></div>
+  </section>
+
+  <section id="tab-source" hidden>
+    <div class="src">
+      <div class="card src-list" id="srcList"></div>
+      <div class="card viewer" id="viewer"><p class="empty">Click a citation chip, or pick a source on the left.</p></div>
+    </div>
+  </section>
+
+  <section id="tab-eval" hidden>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div class="toggle" id="evalToggle">
+        <button data-run="clean" class="active">Clean run</button>
+        <button data-run="faults">With fault injection</button>
+      </div>
+      <span class="small muted" id="evalMeta"></span>
+    </div>
+    <div id="evalBody"></div>
+  </section>
+
+  <p class="notice">Independent prototype built from public information and synthetic data. Not affiliated with Closure.
+    Every person, place and record here is fictional.</p>
+</main>
+
+<script>
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = s => `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+const REASONS = {
+  bad_citation: "Bad citation: the cited timestamp or page does not exist",
+  quote_not_found: "Quote not found verbatim in the cited span",
+  unsupported: "Cited span does not support the claim",
+};
+let sources = [], currentSource = null, evalData = null, evalRun = "clean";
+
+// ---- tabs ------------------------------------------------------------------------------------------
+function showTab(name) {
+  document.querySelectorAll("nav button").forEach(b => b.classList.toggle("active", b.dataset.tab === name));
+  document.querySelectorAll("main > section").forEach(s => s.hidden = s.id !== `tab-${name}`);
+  if (name === "eval" && !evalData) loadEval();
+}
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => showTab(b.dataset.tab));
+
+// ---- ask -------------------------------------------------------------------------------------------
+async function init() {
+  const c = await (await fetch("/case")).json();
+  $("#caseLine").textContent = `${c.case_id} · ${c.title}`;
+  $("#modePill").textContent = c.mode === "mock" ? "mock answerer · no API key" : c.mode + (c.judge ? " · LLM judge" : "");
+  $("#samples").innerHTML = c.samples.map(s => `<button class="sample">${esc(s)}</button>`).join("");
+  document.querySelectorAll(".sample").forEach(b => b.onclick = () => { $("#q").value = b.textContent; ask(); });
+  sources = await (await fetch("/sources")).json();
+  renderSourceList();
+}
+
+$("#askForm").onsubmit = e => { e.preventDefault(); ask(); };
+
+async function ask() {
+  const query = $("#q").value.trim();
+  if (!query) return;
+  $("#askBtn").disabled = true;
+  $("#result").innerHTML = `<p class="empty">Retrieving, drafting and verifying…</p>`;
+  try {
+    const r = await fetch("/ask", { method: "POST", headers: { "Content-Type": "application/json" },
+                                   body: JSON.stringify({ query, inject_fault: $("#fault").checked }) });
+    renderResult(await r.json());
+  } catch (err) {
+    $("#result").innerHTML = `<p class="empty">Request failed: ${esc(err)}</p>`;
+  } finally { $("#askBtn").disabled = false; }
+}
+
+function chip(c, bad = false) {
+  return `<button class="chip ${bad ? "bad" : ""}" data-cite='${esc(JSON.stringify(c))}'>${esc(c.label)}</button>`;
+}
+
+function renderResult(r) {
+  const n = r.claims.length;
+  let html = `<div class="summary"><h2>${n ? `${n} verified claim${n > 1 ? "s" : ""}` : esc(r.answer)}</h2>
+    <span class="small muted">${esc(r.mode)} · ${r.latency_ms} ms · ${r.refused.length} refused</span></div>`;
+  if (n) {
+    html += `<div class="claims">` + r.claims.map(c => {
+      const who = c.citation.speaker;
+      return `<div class="claim">
+        <div class="small"><span class="who">${esc(who)}</span> <span class="muted">${c.citation.source_type === "call" ? "said" : "wrote"}</span></div>
+        <blockquote>“${esc(c.quote)}”</blockquote>
+        <div class="meta">${chip(c.citation)}<span class="tag ok">verified</span>
+          <span class="muted">support ${c.score.toFixed(2)}</span></div></div>`;
+    }).join("") + `</div>`;
+  } else {
+    html += `<div class="noanswer">Nothing in the record could be traced to this question, so nothing is shown.
+      Below is what retrieval found, for a human to check.</div>`;
+  }
+  if (r.refused.length) {
+    html += `<div class="refused"><h3>Refused (${r.refused.length}): dropped before display</h3>` + r.refused.map(c => `
+      <div class="item">
+        <div class="meta"><span class="tag bad">${esc(c.reason)}</span>
+          ${c.fault ? `<span class="tag neutral">injected fault: ${esc(c.fault)}</span>` : ""}
+          ${chip(c.citation, true)}</div>
+        <div class="small" style="margin-top:4px">${esc(REASONS[c.reason] || c.reason)}: ${esc(c.detail)}</div>
+        <div class="small q muted" style="margin-top:2px">“${esc(c.quote)}” · ${esc(c.citation.speaker || "")}</div>
+      </div>`).join("") + `</div>`;
+  }
+  html += `<details ${n ? "" : "open"}><summary>Retrieved chunks (top ${r.retrieved.length}, BM25)</summary>
+    <ul class="retrieved">${r.retrieved.map(x => `<li>${chip(x)} <span class="muted">score ${x.score.toFixed(2)} · ${esc(x.title)}</span>
+      <div style="margin-top:4px">${esc(x.preview)}…</div></li>`).join("") || "<li>Nothing retrieved.</li>"}</ul></details>`;
+  $("#result").innerHTML = html;
+}
+
+document.addEventListener("click", e => {
+  const b = e.target.closest(".chip");
+  if (b) openCitation(JSON.parse(b.dataset.cite));
+});
+
+// ---- source viewer ---------------------------------------------------------------------------------
+function renderSourceList() {
+  const group = (pfx, label) => `<h4>${label}</h4>` + sources.filter(s => s.source_id.startsWith(pfx)).map(s =>
+    `<button data-src="${s.source_id}" title="${esc(s.title)}"><code>${s.source_id}</code> ${esc(s.title.replace(/^Jail call, /, ""))}</button>`).join("");
+  $("#srcList").innerHTML = group("DOC", "Case files") + group("CALL", "Jail calls");
+  $("#srcList").querySelectorAll("button").forEach(b => b.onclick = () => openSource(b.dataset.src, null));
+}
+
+function openCitation(c) { showTab("source"); openSource(c.source_id, c); }
+
+async function openSource(id, cite) {
+  $("#srcList").querySelectorAll("button").forEach(b => {
+    b.classList.toggle("active", b.dataset.src === id);
+    if (b.dataset.src === id) b.scrollIntoView({ block: "nearest" });
+  });
+  const r = await fetch(`/source/${encodeURIComponent(id)}`);
+  if (!r.ok) {
+    $("#viewer").innerHTML = `<div class="cite-banner bad">${esc(cite ? cite.label : id)} points to a source that does not exist.</div>`;
+    return;
+  }
+  const s = await r.json();
+  currentSource = s;
+  let html = `<h2>${esc(s.source_id)} · ${esc(s.title)}</h2><div class="small muted">${esc(s.date)} · `;
+  let hit = 0;
+  if (s.source_type === "call") {
+    html += `${esc(s.participants.join(", "))} · ${fmt(s.duration)} long</div>`;
+    const inRange = l => cite && cite.source_type === "call" && l.start_ts <= cite.end_ts && l.end_ts >= cite.start_ts;
+    const rows = s.lines.map(l => {
+      const h = inRange(l) && l.speaker !== "SYSTEM"; if (h) hit++;
+      return `<div class="ln ${l.speaker === "SYSTEM" ? "sys" : ""} ${h ? "hl" : ""}">
+        <span class="ts">${fmt(l.start_ts)}-${fmt(l.end_ts)}</span><span class="spk">${esc(l.speaker === "SYSTEM" ? "System" : l.speaker)}</span>
+        <span class="tx">${esc(l.text)}</span></div>`;
+    }).join("");
+    html += banner(cite, hit) + `<div class="lines">${rows}</div>`;
+  } else {
+    html += `${esc(s.speaker)}</div>`;
+    const pages = s.pages.map(p => {
+      const rows = p.lines.map((t, i) => {
+        const n = i + 1;
+        const h = cite && cite.source_type === "doc" && cite.page === p.page && n >= cite.line_start && n <= cite.line_end && n > 2;
+        if (h) hit++;
+        return `<div class="ln doc ${n <= 2 ? "hdr" : ""} ${h ? "hl" : ""}"><span class="ts">L${n}</span><span class="tx">${esc(t)}</span></div>`;
+      }).join("");
+      return `<div class="page"><h3>Page ${p.page} of ${s.pages.length}</h3><div class="lines">${rows}</div></div>`;
+    }).join("");
+    html += banner(cite, hit) + pages;
+  }
+  $("#viewer").innerHTML = html;
+  const first = $("#viewer .hl");
+  if (first) first.scrollIntoView({ block: "center", behavior: "smooth" });
+}
+
+function banner(cite, hit) {
+  if (!cite) return "";
+  if (!hit) return `<div class="cite-banner bad">Citation ${esc(cite.label)} does not match any line in this source.</div>`;
+  return `<div class="cite-banner">Highlighted: <b>${esc(cite.label)}</b>${cite.speaker ? ` · cited speaker ${esc(cite.speaker)}` : ""}</div>`;
+}
+
+// ---- eval ------------------------------------------------------------------------------------------
+const METRIC_LABELS = {
+  recall_at_5: ["Retrieval recall@5", "Share of gold evidence found in the top 5 chunks"],
+  citation_precision: ["Citation precision", "Shown claims that cite a gold span"],
+  evidence_coverage: ["Evidence coverage", "Gold evidence covered by shown claims"],
+  quote_fidelity: ["Quote fidelity (shown)", "Shown quotes found verbatim in their cited span"],
+  raw_quote_fidelity: ["Quote fidelity (drafted)", "Before the verifier filters anything"],
+  unanswerable_refusal_rate: ["Refusal on unanswerable", "Unanswerable questions with nothing shown"],
+  false_refusal_rate: ["False refusals", "Answerable questions with nothing shown"],
+  fault_catch_rate: ["Faults caught", "Corrupted claims the verifier refused"],
+};
+
+async function loadEval() {
+  evalData = await (await fetch("/eval")).json();
+  renderEval();
+}
+document.querySelectorAll("#evalToggle button").forEach(b => b.onclick = () => {
+  evalRun = b.dataset.run;
+  document.querySelectorAll("#evalToggle button").forEach(x => x.classList.toggle("active", x === b));
+  renderEval();
+});
+
+function renderEval() {
+  const rep = evalData && evalData[evalRun];
+  if (!rep) { $("#evalBody").innerHTML = `<p class="empty">No report yet. Run <code>python eval.py --inject-faults</code>.</p>`; return; }
+  const other = evalData[evalRun === "clean" ? "faults" : "clean"];
+  $("#evalMeta").textContent = `${rep.mode} · judge: ${rep.judge} · ${rep.questions} questions · ${rep.claims_drafted} claims drafted, ${rep.claims_shown} shown`;
+  const cards = Object.entries(rep.metrics).map(([k, v]) => {
+    const t = rep.targets[k], [label, help] = METRIC_LABELS[k] || [k, ""];
+    const o = other && other.metrics[k];
+    const delta = o != null && v != null && Math.abs(o - v) > 1e-9 ? ` · ${evalRun === "clean" ? "faults" : "clean"} ${o.toFixed(2)}` : "";
+    return `<div class="card metric"><div class="n">${label}</div><div class="v">${v == null ? "n/a" : v.toFixed(2)}</div>
+      <div class="small muted">${help}</div>
+      <div class="t">${t ? `<span class="tag ${t.pass ? "ok" : "bad"}">${t.pass ? "pass" : "fail"}</span> target ${t.op} ${t.target}` : `<span class="tag neutral">info</span>`}
+      <span class="muted">${delta}</span></div></div>`;
+  }).join("");
+  let html = `<div class="metrics">${cards}</div>`;
+  const fi = rep.fault_injection;
+  if (fi) {
+    html += `<div class="card" style="margin-top:12px"><b>Fault injection</b>
+      <span class="muted small">${Math.round(fi.rate * 100)}% of drafted claims corrupted (seed ${fi.seed})</span>
+      <div class="faults">
+        <div><div class="v" style="font-size:22px;font-weight:700">${fi.caught}/${fi.injected}</div><div class="small muted">caught</div></div>
+        ${Object.entries(fi.by_type).map(([t, c]) => `<div><div style="font-size:18px;font-weight:600">${c.caught}/${c.injected}</div><div class="small muted">${t.replace("_", " ")}</div></div>`).join("")}
+        <div><div style="font-size:18px;font-weight:600">${fi.clean_claims_refused}</div><div class="small muted">clean claims wrongly refused</div></div>
+      </div></div>`;
+  }
+  const fails = rep.failures;
+  html += `<h3 style="margin:22px 0 8px;font-size:16px">Questions with issues (${fails.length} of ${rep.questions})</h3>`;
+  html += fails.length ? `<div class="card" style="padding:0;overflow-x:auto"><table><thead><tr><th>ID</th><th>Question</th><th>Type</th><th>Issues</th><th>Shown citations</th></tr></thead><tbody>` +
+    fails.map(q => `<tr><td>${q.qid}</td><td>${esc(q.question)}</td><td>${q.category.replace("_", " ")}</td>
+      <td>${q.issues.map(esc).join("<br>")}${q.refused.length ? `<br><span class="muted">refused: ${q.refused.map(r => esc(r.reason + (r.fault ? ` (${r.fault})` : ""))).join(", ")}</span>` : ""}</td>
+      <td style="font-family:var(--mono);font-size:12px;white-space:nowrap">${q.shown.map(esc).join("<br>") || "–"}</td></tr>`).join("") + `</tbody></table></div>`
+    : `<p class="muted">None.</p>`;
+  html += `<p class="small muted">Measured on synthetic data written alongside the gold questions, so these numbers are optimistic and say nothing about any real product.</p>`;
+  $("#evalBody").innerHTML = html;
+}
+
+init();
+</script>
+</body>
+</html>

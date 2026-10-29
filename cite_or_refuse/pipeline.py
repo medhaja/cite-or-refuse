@@ -55,6 +55,7 @@ class Pipeline:
             "retrieved": [
                 {"chunk_id": c["chunk_id"], "label": c["label"], "source_id": c["source_id"],
                  "source_type": c["source_type"], "title": c["title"], "score": c["score"],
+                 **{k: c[k] for k in ("start_ts", "end_ts", "page", "line_start", "line_end")},
                  "preview": c["text"][:160]}
                 for c in retrieved
             ],

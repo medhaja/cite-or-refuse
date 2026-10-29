@@ -18,7 +18,7 @@ from .pipeline import Pipeline
 ROOT = Path(__file__).resolve().parent.parent
 STATIC = ROOT / "static"
 REPORTS = {"clean": ROOT / "eval_report.json", "faults": ROOT / "eval_report_faults.json"}
-SAMPLE_QIDS = ["Q01", "Q02", "Q10", "Q13", "Q22", "Q25", "Q26"]
+SAMPLE_QIDS = ["Q01", "Q02", "Q10", "Q13", "Q16", "Q22", "Q24", "Q26"]
 
 
 class AskRequest(BaseModel):
